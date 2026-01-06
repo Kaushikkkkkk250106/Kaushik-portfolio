@@ -1,0 +1,117 @@
+
+h1 , pre{
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 8px #b2bec3;
+}
+#intro{
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    background: #f5f6fa;
+    color: #353b48;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+    margin: 20px auto;
+    max-width: 700px;
+}
+#pic{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 16px rgba(44, 62, 80, 0.15);
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+body {
+    background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+}
+
+header {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(44, 62, 80, 0.10);
+    margin: 30px auto 20px auto;
+    max-width: 800px;
+    padding: 30px 0 10px 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(44, 62, 80, 0.10);
+    padding: 20px 0 10px 0;
+}
+
+a {
+    color: #0984e3;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+a:hover {
+    color: #6c5ce7;
+    text-decoration: underline;
+}
+
+button, .btn {
+    background: #0984e3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 24px;
+    font-size: 1em;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.10);
+    transition: background 0.2s, transform 0.2s;
+}
+button:hover, .btn:hover {
+    background: #6c5ce7;
+    transform: translateY(-2px) scale(1.04);
+}
+
+pre {
+    background: #f1f2f6;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 1px 4px rgba(44, 62, 80, 0.07);
+    font-size: 1.1em;
+    color: #636e72;
+    margin: 20px auto;
+    max-width: 700px;
+    overflow-x: auto;
+}
+
+footer {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(44, 62, 80, 0.10);
+    max-width: 800px;
+    margin: 30px auto 20px auto;
+    padding: 20px 0 10px 0;
+    text-align: center;
+    font-size: 1.1em;
+    color: #636e72;
+}
+
+footer img {
+    border-radius: 10px;
+    margin: 10px 10px 0 10px;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.10);
+    transition: transform 0.2s;
+}
+footer img:hover {
+    transform: scale(1.08) rotate(-2deg);
+}
