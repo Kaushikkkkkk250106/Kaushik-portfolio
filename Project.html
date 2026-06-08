@@ -3,25 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects - Kaushik Tripathi</title>
+    <meta name="description" content="Projects by Kaushik Tripathi – International Debt Analysis Platform, Retail Data Cleaning, and Personal Portfolio.">
+    <title>Projects | Kaushik Tripathi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        .subpage-wrapper { max-width: 900px; margin: 0 auto; padding: 120px 24px 80px; position: relative; z-index: 1; }
+        .subpage-header { margin-bottom: 50px; }
+        .back-btn { display: inline-flex; align-items: center; gap: 8px; color: var(--clr-text-muted); font-size: 0.9rem; margin-bottom: 24px; transition: var(--transition); }
+        .back-btn:hover { color: var(--clr-primary2); transform: translateX(-4px); }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>My Project Work</h1>
-    </header>
-    <main>
-        <section class="project-list">
-            <h2>Project 1: Personal Portfolio Website</h2>
-            <p>
-                This website is my personal portfolio, built using HTML and CSS. It showcases my skills, education, experience, and projects in a clean and modern layout.
+<nav class="navbar scrolled">
+    <div class="nav-brand"><span class="brand-dot"></span><span>KT</span></div>
+    <ul class="nav-links">
+        <li><a href="index.html#hero" class="nav-link">Home</a></li>
+        <li><a href="index.html#projects" class="nav-link active">Projects</a></li>
+        <li><a href="index.html#experience" class="nav-link">Experience</a></li>
+        <li><a href="index.html#education" class="nav-link">Education</a></li>
+    </ul>
+</nav>
+
+<div class="subpage-wrapper">
+    <div class="subpage-header">
+        <a href="index.html#projects" class="back-btn">← Back to Portfolio</a>
+        <div class="section-header" style="text-align:left; margin-bottom:0;">
+            <span class="section-tag">What I've Built</span>
+            <h1 class="section-title">My <span class="text-gradient">Projects</span></h1>
+        </div>
+    </div>
+
+    <div class="projects-grid" style="grid-template-columns:1fr;">
+
+        <!-- Final Year Project -->
+        <div class="project-card featured glass-card" id="projectFinalYearDetail">
+            <div class="project-badge">🏆 Final Year Project – BCA (BBDU)</div>
+            <div class="project-header">
+                <div class="project-icon">🌐</div>
+                <div class="project-meta">
+                    <h2>International Debt Analysis Platform</h2>
+                    <div class="project-tags">
+                        <span class="ptag">Python</span>
+                        <span class="ptag">Pandas</span>
+                        <span class="ptag">NumPy</span>
+                        <span class="ptag">Matplotlib</span>
+                        <span class="ptag">Seaborn</span>
+                        <span class="ptag">SQL</span>
+                        <span class="ptag">Power BI</span>
+                        <span class="ptag">Jupyter</span>
+                    </div>
+                </div>
+            </div>
+            <p class="project-desc">
+                A comprehensive data analytics platform developed as the <strong>final year project</strong> for BCA at BBDU.
+                The platform analyses international debt data across multiple countries and time periods using publicly available
+                World Bank and IMF datasets. It performs advanced statistical analysis and generates interactive visualisations
+                to uncover patterns in global debt dynamics, debt-to-GDP ratios, and creditor composition.
             </p>
-            <p>
-                <strong>Source Code:</strong> <a href="src code.txt" target="_blank">View Portfolio Source Code</a>
+            <h4 style="color:var(--clr-white);font-size:0.95rem;margin-bottom:8px;">📌 Key Features & Highlights</h4>
+            <ul class="project-highlights">
+                <li>🔍 Multi-country debt trend analysis with time-series visualisation (line charts, area charts)</li>
+                <li>📈 Debt-to-GDP ratio benchmarking across 50+ economies using World Bank indicators</li>
+                <li>🗂️ Creditor composition breakdown: bilateral vs multilateral vs commercial creditors</li>
+                <li>📊 Interactive Power BI dashboard for stakeholder-level reporting</li>
+                <li>🧹 End-to-end data cleaning pipeline: missing value imputation, normalisation, feature engineering</li>
+                <li>📉 Correlation analysis between debt levels and macroeconomic indicators (GDP growth, inflation)</li>
+                <li>🌍 Country-level risk profiling based on debt sustainability indicators</li>
+            </ul>
+            <h4 style="color:var(--clr-white);font-size:0.95rem;margin-bottom:8px;">🛠️ Technical Approach</h4>
+            <p class="project-desc">
+                Data was sourced from the World Bank Open Data API and IMF public datasets. Python (Pandas, NumPy) was used
+                for data wrangling and preprocessing. EDA was performed using Matplotlib and Seaborn, and a Power BI dashboard
+                was built for executive-level visualisation. SQL queries were used for data aggregation and filtering.
             </p>
-        </section>
-        <!-- Add more projects here as you build them! -->
-        <a href="index.html" class="btn">&#8592; Back to Portfolio</a>
-    </main>
+            <div class="project-links">
+                <a href="https://github.com/kaushiktripathi" target="_blank" class="btn btn-primary" id="finalYearGithubLink">View on GitHub</a>
+            </div>
+        </div>
+
+        <!-- Retail Project -->
+        <div class="project-card glass-card" id="projectRetailDetail">
+            <div class="project-header">
+                <div class="project-icon">🛒</div>
+                <div class="project-meta">
+                    <h2>Retail Data Cleaning &amp; Analysis</h2>
+                    <div class="project-tags">
+                        <span class="ptag">Python</span>
+                        <span class="ptag">Pandas</span>
+                        <span class="ptag">NumPy</span>
+                        <span class="ptag">Seaborn</span>
+                        <span class="ptag">Matplotlib</span>
+                        <span class="ptag">SciPy</span>
+                    </div>
+                </div>
+            </div>
+            <p class="project-desc">
+                End-to-end data wrangling project on retail transaction data. Covers the complete data analytics
+                lifecycle from raw data ingestion through to insight generation. Demonstrates industry-standard
+                data cleaning, statistical outlier removal, and business intelligence reporting.
+            </p>
+            <ul class="project-highlights">
+                <li>🧹 Automated missing-value imputation using median/mode strategies</li>
+                <li>🔎 Z-Score-based outlier detection and removal for robust analysis</li>
+                <li>⚙️ Feature engineering: revenue columns, date-time decomposition</li>
+                <li>📊 Monthly revenue trend visualisations with seasonal decomposition</li>
+                <li>🏆 Top-10 customer segmentation and CLV estimation</li>
+                <li>📈 Category-level performance dashboards using Seaborn & Matplotlib</li>
+            </ul>
+            <div class="project-links">
+                <a href="https://github.com/kaushiktripathi" target="_blank" class="btn btn-primary" id="retailGithubLink">View on GitHub</a>
+            </div>
+        </div>
+
+        <!-- Portfolio Project -->
+        <div class="project-card glass-card" id="projectPortfolioDetail">
+            <div class="project-header">
+                <div class="project-icon">💼</div>
+                <div class="project-meta">
+                    <h2>Personal Portfolio Website</h2>
+                    <div class="project-tags">
+                        <span class="ptag">HTML5</span>
+                        <span class="ptag">CSS3</span>
+                        <span class="ptag">JavaScript</span>
+                        <span class="ptag">Glassmorphism</span>
+                    </div>
+                </div>
+            </div>
+            <p class="project-desc">
+                A modern, responsive personal portfolio website featuring dark glassmorphism aesthetics, smooth
+                scroll-reveal animations, and a clean professional layout. Built entirely with vanilla HTML, CSS,
+                and JavaScript — no frameworks required.
+            </p>
+            <ul class="project-highlights">
+                <li>✨ Dark glassmorphism design with gradient accents</li>
+                <li>📱 Fully responsive layout for mobile, tablet, and desktop</li>
+                <li>🎨 Smooth IntersectionObserver-based scroll-reveal animations</li>
+                <li>⚡ Zero-framework, lightweight implementation</li>
+                <li>🌙 Animated hero with floating blob background</li>
+                <li>🧭 Sticky navigation with active section highlighting</li>
+            </ul>
+            <div class="project-links">
+                <a href="index.html" class="btn btn-outline">View Live</a>
+            </div>
+        </div>
+
+    </div>
+</div>
 </body>
 </html>

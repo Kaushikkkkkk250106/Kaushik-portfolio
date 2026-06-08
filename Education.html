@@ -3,36 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Education - Kaushik Tripathi</title>
+    <meta name="description" content="Education of Kaushik Tripathi – BCA at BBDU, Class 12 and Class 10 from Kendriya Vidyalaya.">
+    <title>Education | Kaushik Tripathi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        .subpage-wrapper { max-width: 900px; margin: 0 auto; padding: 120px 24px 80px; position: relative; z-index: 1; }
+        .back-btn { display: inline-flex; align-items: center; gap: 8px; color: var(--clr-text-muted); font-size: 0.9rem; margin-bottom: 24px; transition: var(--transition); }
+        .back-btn:hover { color: var(--clr-primary2); transform: translateX(-4px); }
+    </style>
 </head>
 <body>
-    <main>
-        <section class="education-list">
-            <h1>My Education</h1>
-            <div class="edu-block">
-                <h2>Class 10</h2>
-                <p><strong>School:</strong> Kendriya Vidyalaya (2021)</p>
-                <a href="class 10.pdf" target="_blank" class="btn">View 10th Score Card</a>
+<nav class="navbar scrolled">
+    <div class="nav-brand"><span class="brand-dot"></span><span>KT</span></div>
+    <ul class="nav-links">
+        <li><a href="index.html#hero" class="nav-link">Home</a></li>
+        <li><a href="index.html#education" class="nav-link active">Education</a></li>
+        <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+        <li><a href="index.html#experience" class="nav-link">Experience</a></li>
+    </ul>
+</nav>
+
+<div class="subpage-wrapper">
+    <a href="index.html#education" class="back-btn">← Back to Portfolio</a>
+    <div class="section-header" style="text-align:left; margin-bottom:40px;">
+        <span class="section-tag">My Academic Journey</span>
+        <h1 class="section-title">Education &amp; <span class="text-gradient">Qualifications</span></h1>
+    </div>
+
+    <div class="edu-timeline">
+
+        <div class="edu-card glass-card" id="eduBCADetail">
+            <div class="edu-year-badge">2023 – 2026 (Current)</div>
+            <div class="edu-content">
+                <div class="edu-degree-icon">🎓</div>
+                <div>
+                    <h2 style="font-size:1.2rem;font-weight:700;color:var(--clr-white);margin-bottom:6px;">Bachelor of Computer Applications (BCA)</h2>
+                    <p class="edu-institution">Babu Banarasi Das University (BBDU), Lucknow</p>
+                    <p class="edu-spec">Specialisation: Data Science &amp; Artificial Intelligence</p>
+                    <div class="edu-details">
+                        <span>📋 University Roll No: 1230258213</span>
+                        <span>🔑 Student Code: KAU</span>
+                        <span>👩 Mother Code: NEE</span>
+                    </div>
+                    <p class="exp-desc" style="margin-top:12px;">
+                        Pursuing BCA with a focus on Data Science and AI, building strong foundations in Python, machine learning,
+                        database management, web development, and advanced analytics. Final year project: <strong>International Debt Analysis Platform</strong>.
+                    </p>
+                </div>
             </div>
-            <hr>
-            <div class="edu-block">
-                <h2>Class 12</h2>
-                <p><strong>School:</strong> Kendriya Vidyalaya (2023)</p>
-                <a href="class 12.pdf" target="_blank" class="btn">View 12th Score Card</a>
+            <div class="edu-links">
+                <a href="https://examcell.bbdu.ac.in/bbdu-result/" target="_blank" class="btn btn-outline-sm" id="bbduResultLink">View BBDU Results</a>
             </div>
-            <hr>
-            <div class="edu-block">
-                <h2>Bachelor of Computer Application</h2>
-                <p><strong>University:</strong> Babu Banarasi Das University (2023-2026)</p>
-                <p><strong>University Roll Number:</strong> 1230258213</p>
-                <p><strong>Student 3 Letters:</strong> KAU<br><strong>Mother's 3 Letters:</strong> NEE</p>
-                <a href="https://examcell.bbdu.ac.in/bbdu-result/" target="_blank" class="btn">View BBDU Results</a>
+        </div>
+
+        <div class="edu-card glass-card" id="eduClass12Detail">
+            <div class="edu-year-badge">2023</div>
+            <div class="edu-content">
+                <div class="edu-degree-icon">📚</div>
+                <div>
+                    <h2 style="font-size:1.2rem;font-weight:700;color:var(--clr-white);margin-bottom:6px;">Class XII – Science Stream</h2>
+                    <p class="edu-institution">Kendriya Vidyalaya</p>
+                    <p class="edu-spec">Central Board of Secondary Education (CBSE)</p>
+                    <p class="exp-desc" style="margin-top:8px;">Completed secondary education with Science stream, laying the foundation for computer science and analytical studies.</p>
+                </div>
             </div>
-            <hr>
-            <br>
-        </section>
-        <a href="index.html" class="btn">&#8592; Back to Portfolio</a>
-    </main>
+            <div class="edu-links">
+                <a href="class 12.pdf" target="_blank" class="btn btn-outline-sm" id="class12ScoreLink">View Score Card</a>
+            </div>
+        </div>
+
+        <div class="edu-card glass-card" id="eduClass10Detail">
+            <div class="edu-year-badge">2021</div>
+            <div class="edu-content">
+                <div class="edu-degree-icon">🏫</div>
+                <div>
+                    <h2 style="font-size:1.2rem;font-weight:700;color:var(--clr-white);margin-bottom:6px;">Class X</h2>
+                    <p class="edu-institution">Kendriya Vidyalaya</p>
+                    <p class="edu-spec">Central Board of Secondary Education (CBSE)</p>
+                    <p class="exp-desc" style="margin-top:8px;">Completed Class X with distinction, demonstrating strong fundamentals in mathematics and science.</p>
+                </div>
+            </div>
+            <div class="edu-links">
+                <a href="class 10.pdf" target="_blank" class="btn btn-outline-sm" id="class10ScoreLink">View Score Card</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div style="margin-top:48px;">
+        <a href="index.html" class="btn btn-outline">← Back to Portfolio</a>
+    </div>
+</div>
 </body>
 </html>
