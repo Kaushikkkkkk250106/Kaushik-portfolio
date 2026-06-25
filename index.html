@@ -1,16 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kaushik Tripathi – BCA Data Science & AI student at BBDU. Portfolio showcasing projects, experience, and skills in Python, Machine Learning, and Data Analytics.">
-    <title>Kaushik Tripathi | Data Science & AI Portfolio</title>
+    <meta name="description" content="Kaushik Tripathi – BCA Data Science &amp; AI student at BBDU. Portfolio showcasing projects, experience, and skills in Python, Machine Learning, and Data Analytics.">
+    <title>Kaushik Tripathi | Data Science &amp; AI Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<!-- Particle Canvas -->
+<canvas id="particles-canvas"></canvas>
+
+<!-- Cursor Glow -->
+<div class="cursor-glow" id="cursorGlow"></div>
 
 <!-- ===== NAVBAR ===== -->
 <nav class="navbar" id="navbar">
@@ -27,9 +33,15 @@
         <li><a href="#education" class="nav-link" id="nav-education">Education</a></li>
         <li><a href="#contact" class="nav-link" id="nav-contact">Contact</a></li>
     </ul>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-    </button>
+    <div class="nav-right">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <span class="icon-sun">☀️</span>
+            <span class="icon-moon">🌙</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
 </nav>
 
 <!-- ===== HERO SECTION ===== -->
@@ -46,15 +58,17 @@
             Open to Opportunities
         </div>
         <div class="hero-avatar-wrapper">
-            <div class="avatar-ring">
-                <img src="PIC/proflepic.jpg" alt="Kaushik Tripathi" class="hero-avatar" id="heroAvatar" style="object-position: center 10%;">
+            <div class="avatar-tilt" id="avatarTilt">
+                <div class="avatar-ring">
+                    <img src="PIC/proflepic.jpg" alt="Kaushik Tripathi" class="hero-avatar" id="heroAvatar" style="object-position: center 10%;">
+                </div>
             </div>
             <div class="avatar-status"></div>
         </div>
         <h1 class="hero-name">
             <span class="text-gradient">Kaushik</span> Tripathi
         </h1>
-        <p class="hero-tagline">Data Science &amp; AI Enthusiast</p>
+        <p class="hero-tagline" id="heroTagline"><span id="typedText"></span><span class="typed-cursor"></span></p>
         <p class="hero-desc">
             BCA student at BBDU specialising in Data Science &amp; Artificial Intelligence.
             Passionate about Python, Machine Learning, and turning data into actionable insights.
@@ -66,12 +80,12 @@
         </div>
         <div class="hero-stats">
             <div class="stat-item">
-                <span class="stat-num">5+</span>
+                <span class="stat-num" data-count="5">0</span>
                 <span class="stat-label">Projects</span>
             </div>
             <div class="stat-divider"></div>
             <div class="stat-item">
-                <span class="stat-num">8+</span>
+                <span class="stat-num" data-count="10">0</span>
                 <span class="stat-label">Certifications</span>
             </div>
             <div class="stat-divider"></div>
@@ -160,7 +174,7 @@
             <div class="skill-category glass-card">
                 <div class="skill-cat-header">
                     <span class="skill-cat-icon">📊</span>
-                    <h3>Data & Analytics</h3>
+                    <h3>Data &amp; Analytics</h3>
                 </div>
                 <div class="skill-tags">
                     <span class="skill-tag">Pandas</span>
@@ -186,10 +200,10 @@
             <div class="skill-category glass-card">
                 <div class="skill-cat-header">
                     <span class="skill-cat-icon">🛠️</span>
-                    <h3>Tools & Platforms</h3>
+                    <h3>Tools &amp; Platforms</h3>
                 </div>
                 <div class="skill-tags">
-                    <span class="skill-tag">Git & GitHub</span>
+                    <span class="skill-tag">Git &amp; GitHub</span>
                     <span class="skill-tag">VS Code</span>
                     <span class="skill-tag">Google Colab</span>
                     <span class="skill-tag">MS Excel</span>
@@ -251,7 +265,7 @@
                 <div class="project-header">
                     <div class="project-icon">🛒</div>
                     <div class="project-meta">
-                        <h3>Retail Data Cleaning & Analysis</h3>
+                        <h3>Retail Data Cleaning &amp; Analysis</h3>
                         <div class="project-tags">
                             <span class="ptag">Python</span>
                             <span class="ptag">Pandas</span>
@@ -267,7 +281,7 @@
                 </p>
                 <ul class="project-highlights">
                     <li>🧹 Automated missing-value imputation pipeline</li>
-                    <li>🔎 Z-Score-based outlier detection & removal</li>
+                    <li>🔎 Z-Score-based outlier detection &amp; removal</li>
                     <li>📊 Monthly revenue trend visualisations</li>
                     <li>🏆 Top-10 customer segmentation analysis</li>
                 </ul>
@@ -295,16 +309,15 @@
                     experience, and projects in a clean, professional layout.
                 </p>
                 <ul class="project-highlights">
-                    <li>✨ Glassmorphism & gradient design system</li>
+                    <li>✨ Glassmorphism &amp; gradient design system</li>
                     <li>📱 Fully responsive across all devices</li>
                     <li>🎨 Smooth scroll-reveal animations</li>
-                    <li>🌙 Dark mode aesthetic</li>
+                    <li>🌙 Dark/Light mode toggle</li>
                 </ul>
                 <div class="project-links">
                     <a href="https://github.com/Kaushikkkkkk250106/Kaushik-portfolio" target="_blank" class="btn btn-primary" id="projectPortfolioGithub">View on GitHub</a>
                 </div>
             </div>
-
 
             <!-- Project 4: Vrinda Store Excel -->
             <div class="project-card glass-card" id="projectVrinda">
@@ -565,6 +578,20 @@
                 </div>
             </div>
 
+            <!-- ===== NEW CERTIFICATE ===== -->
+            <div class="cert-card glass-card new-cert" id="certGenAI">
+                <div class="cert-icon">🧠</div>
+                <div class="cert-info">
+                    <h4>What Is Generative AI</h4>
+                    <p class="cert-issuer">LinkedIn Learning</p>
+                    <p class="cert-year">2025</p>
+                    <span class="cert-badge">Completed</span>
+                    <div class="cert-actions">
+                        <a href="Certification/CertificateOfCompletion_What Is Generative AI (1).pdf" target="_blank" class="btn-cert-view" id="certViewGenAI">📄 View Certificate</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
@@ -695,8 +722,178 @@
 <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
 
 <script>
-// ===== NAVBAR SCROLL EFFECT =====
-const navbar = document.getElementById('navbar');
+// ======================================================
+// THEME TOGGLE
+// ======================================================
+const html = document.documentElement;
+const themeToggle = document.getElementById('themeToggle');
+const STORAGE_KEY = 'kt-theme';
+
+function applyTheme(theme) {
+    html.setAttribute('data-theme', theme);
+    localStorage.setItem(STORAGE_KEY, theme);
+}
+
+// Init from storage
+const savedTheme = localStorage.getItem(STORAGE_KEY) || 'dark';
+applyTheme(savedTheme);
+
+themeToggle.addEventListener('click', () => {
+    const current = html.getAttribute('data-theme');
+    applyTheme(current === 'dark' ? 'light' : 'dark');
+});
+
+// ======================================================
+// PARTICLE CANVAS
+// ======================================================
+(function initParticles() {
+    const canvas = document.getElementById('particles-canvas');
+    const ctx = canvas.getContext('2d');
+    let W, H, particles = [];
+
+    function resize() {
+        W = canvas.width  = window.innerWidth;
+        H = canvas.height = window.innerHeight;
+    }
+    window.addEventListener('resize', resize);
+    resize();
+
+    const COUNT = 80;
+    function mkParticle() {
+        return {
+            x: Math.random() * W,
+            y: Math.random() * H,
+            r: Math.random() * 1.6 + 0.4,
+            dx: (Math.random() - 0.5) * 0.4,
+            dy: (Math.random() - 0.5) * 0.4,
+            a: Math.random() * 0.6 + 0.2,
+        };
+    }
+    for (let i = 0; i < COUNT; i++) particles.push(mkParticle());
+
+    function draw() {
+        ctx.clearRect(0, 0, W, H);
+        const isDark = html.getAttribute('data-theme') !== 'light';
+        const baseColor = isDark ? '108,99,255' : '91,82,232';
+        const lineColor = isDark ? 'rgba(108,99,255,' : 'rgba(91,82,232,';
+
+        particles.forEach((p, i) => {
+            p.x += p.dx; p.y += p.dy;
+            if (p.x < 0) p.x = W; if (p.x > W) p.x = 0;
+            if (p.y < 0) p.y = H; if (p.y > H) p.y = 0;
+
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+            ctx.fillStyle = `rgba(${baseColor},${p.a})`;
+            ctx.fill();
+
+            // Connect nearby particles
+            for (let j = i + 1; j < particles.length; j++) {
+                const q = particles[j];
+                const dist = Math.hypot(p.x - q.x, p.y - q.y);
+                if (dist < 120) {
+                    ctx.beginPath();
+                    ctx.moveTo(p.x, p.y);
+                    ctx.lineTo(q.x, q.y);
+                    ctx.strokeStyle = lineColor + (0.12 * (1 - dist / 120)) + ')';
+                    ctx.lineWidth = 0.6;
+                    ctx.stroke();
+                }
+            }
+        });
+        requestAnimationFrame(draw);
+    }
+    draw();
+})();
+
+// ======================================================
+// CURSOR GLOW
+// ======================================================
+const cursorGlow = document.getElementById('cursorGlow');
+document.addEventListener('mousemove', e => {
+    cursorGlow.style.left = e.clientX + 'px';
+    cursorGlow.style.top  = e.clientY + 'px';
+});
+
+// ======================================================
+// AVATAR 3D TILT
+// ======================================================
+const avatarTilt = document.getElementById('avatarTilt');
+if (avatarTilt) {
+    document.addEventListener('mousemove', e => {
+        const cx = window.innerWidth / 2, cy = window.innerHeight / 2;
+        const rx = ((e.clientY - cy) / cy) * -10;
+        const ry = ((e.clientX - cx) / cx) * 10;
+        avatarTilt.style.transform = `rotateX(${rx}deg) rotateY(${ry}deg)`;
+    });
+    document.addEventListener('mouseleave', () => {
+        avatarTilt.style.transform = 'rotateX(0deg) rotateY(0deg)';
+    });
+}
+
+// ======================================================
+// TYPED TEXT EFFECT
+// ======================================================
+const phrases = [
+    'Data Science & AI Enthusiast',
+    'Python Developer',
+    'Machine Learning Explorer',
+    'Power BI Dashboard Builder',
+    'Future Data Scientist',
+];
+let pIdx = 0, cIdx = 0, deleting = false;
+const typedEl = document.getElementById('typedText');
+
+function typeLoop() {
+    if (!typedEl) return;
+    const current = phrases[pIdx];
+    if (!deleting) {
+        typedEl.textContent = current.slice(0, ++cIdx);
+        if (cIdx === current.length) { deleting = true; setTimeout(typeLoop, 1800); return; }
+    } else {
+        typedEl.textContent = current.slice(0, --cIdx);
+        if (cIdx === 0) { deleting = false; pIdx = (pIdx + 1) % phrases.length; }
+    }
+    setTimeout(typeLoop, deleting ? 42 : 72);
+}
+typeLoop();
+
+// ======================================================
+// ANIMATED COUNTERS
+// ======================================================
+function animateCounter(el, target, suffix) {
+    let start = 0;
+    const dur = 1400;
+    const step = (timestamp) => {
+        if (!start) start = timestamp;
+        const progress = Math.min((timestamp - start) / dur, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        el.textContent = Math.floor(eased * target) + (suffix || '');
+        if (progress < 1) requestAnimationFrame(step);
+        else el.textContent = target + (suffix || '');
+    };
+    requestAnimationFrame(step);
+}
+
+const counterObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const el = entry.target;
+            const target = parseInt(el.getAttribute('data-count'));
+            if (!isNaN(target)) {
+                animateCounter(el, target, el.getAttribute('data-suffix') || '+');
+                counterObserver.unobserve(el);
+            }
+        }
+    });
+}, { threshold: 0.5 });
+
+document.querySelectorAll('[data-count]').forEach(el => counterObserver.observe(el));
+
+// ======================================================
+// NAVBAR SCROLL EFFECT
+// ======================================================
+const navbar   = document.getElementById('navbar');
 const backToTop = document.getElementById('backToTop');
 
 window.addEventListener('scroll', () => {
@@ -714,15 +911,15 @@ backToTop.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-// ===== HAMBURGER MENU =====
+// ======================================================
+// HAMBURGER MENU
+// ======================================================
 const hamburger = document.getElementById('hamburger');
-const navLinks = document.getElementById('navLinks');
+const navLinks  = document.getElementById('navLinks');
 hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('open');
     hamburger.classList.toggle('active');
 });
-
-// Close menu on link click
 document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', () => {
         navLinks.classList.remove('open');
@@ -730,9 +927,11 @@ document.querySelectorAll('.nav-link').forEach(link => {
     });
 });
 
-// ===== ACTIVE NAV HIGHLIGHT =====
+// ======================================================
+// ACTIVE NAV HIGHLIGHT
+// ======================================================
 function highlightNav() {
-    const sections = ['hero','about','skills','projects','experience','education','certifications','contact'];
+    const sections = ['hero','about','skills','projects','experience','education','contact'];
     const scrollY = window.scrollY + 120;
     sections.forEach(id => {
         const el = document.getElementById(id);
@@ -745,21 +944,31 @@ function highlightNav() {
     });
 }
 
-// ===== SCROLL REVEAL =====
-const observer = new IntersectionObserver((entries) => {
+// ======================================================
+// SCROLL REVEAL (staggered by position in parent)
+// ======================================================
+const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('revealed');
         }
     });
-}, { threshold: 0.1 });
+}, { threshold: 0.08 });
 
-document.querySelectorAll('.glass-card, .timeline-item, .edu-card, .stat-item').forEach(el => {
+document.querySelectorAll('.glass-card, .timeline-item, .edu-card, .stat-item').forEach((el, i) => {
     el.classList.add('reveal');
-    observer.observe(el);
+    // Stagger sibling cards
+    const siblings = el.parentElement ? [...el.parentElement.children].filter(c => c.classList.contains(el.classList[0])) : [];
+    const idx = siblings.indexOf(el);
+    if (idx > 0 && idx <= 5) {
+        el.style.transitionDelay = (idx * 0.1) + 's';
+    }
+    revealObserver.observe(el);
 });
 
-// ===== SMOOTH SCROLL =====
+// ======================================================
+// SMOOTH SCROLL
+// ======================================================
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -770,12 +979,49 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// ===== HERO SCROLL INDICATOR FADE =====
+// ======================================================
+// HERO SCROLL INDICATOR FADE
+// ======================================================
 window.addEventListener('scroll', () => {
     const indicator = document.getElementById('scrollIndicator');
     if (indicator) {
         indicator.style.opacity = Math.max(0, 1 - window.scrollY / 300);
     }
+});
+
+// ======================================================
+// BUTTON RIPPLE EFFECT
+// ======================================================
+document.querySelectorAll('.btn, .btn-cert-view, .btn-outline-sm').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+        const rect = this.getBoundingClientRect();
+        const ripple = document.createElement('span');
+        ripple.className = 'ripple';
+        const size = Math.max(rect.width, rect.height);
+        ripple.style.cssText = `width:${size}px;height:${size}px;left:${e.clientX-rect.left-size/2}px;top:${e.clientY-rect.top-size/2}px`;
+        this.style.position = 'relative';
+        this.style.overflow = 'hidden';
+        this.appendChild(ripple);
+        ripple.addEventListener('animationend', () => ripple.remove());
+    });
+});
+
+// ======================================================
+// PROJECT CARD 3D TILT ON HOVER
+// ======================================================
+document.querySelectorAll('.project-card, .cert-card, .edu-card').forEach(card => {
+    card.addEventListener('mousemove', e => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const cx = rect.width / 2, cy = rect.height / 2;
+        const rx = ((y - cy) / cy) * -6;
+        const ry = ((x - cx) / cx) * 6;
+        card.style.transform = `translateY(-6px) scale(1.01) rotateX(${rx}deg) rotateY(${ry}deg)`;
+    });
+    card.addEventListener('mouseleave', () => {
+        card.style.transform = '';
+    });
 });
 </script>
 </body>
