@@ -1,1029 +1,1114 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kaushik Tripathi – BCA Data Science &amp; AI student at BBDU. Portfolio showcasing projects, experience, and skills in Python, Machine Learning, and Data Analytics.">
+    <meta name="description"
+        content="Kaushik Tripathi – BCA Data Science &amp; AI student at BBDU. Portfolio showcasing projects, experience, and skills in Python, Machine Learning, and Data Analytics.">
     <title>Kaushik Tripathi | Data Science &amp; AI Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- Particle Canvas -->
-<canvas id="particles-canvas"></canvas>
+    <!-- Particle Canvas -->
+    <canvas id="particles-canvas"></canvas>
 
-<!-- Cursor Glow -->
-<div class="cursor-glow" id="cursorGlow"></div>
+    <!-- Cursor Glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
 
-<!-- ===== NAVBAR ===== -->
-<nav class="navbar" id="navbar">
-    <div class="nav-brand">
-        <span class="brand-dot"></span>
-        <span>KT</span>
-    </div>
-    <ul class="nav-links" id="navLinks">
-        <li><a href="#hero" class="nav-link active" id="nav-hero">Home</a></li>
-        <li><a href="#about" class="nav-link" id="nav-about">About</a></li>
-        <li><a href="#skills" class="nav-link" id="nav-skills">Skills</a></li>
-        <li><a href="#projects" class="nav-link" id="nav-projects">Projects</a></li>
-        <li><a href="#experience" class="nav-link" id="nav-experience">Experience</a></li>
-        <li><a href="#education" class="nav-link" id="nav-education">Education</a></li>
-        <li><a href="#contact" class="nav-link" id="nav-contact">Contact</a></li>
-    </ul>
-    <div class="nav-right">
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-            <span class="icon-sun">☀️</span>
-            <span class="icon-moon">🌙</span>
-        </button>
-        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-            <span></span><span></span><span></span>
-        </button>
-    </div>
-</nav>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-brand">
+            <span class="brand-dot"></span>
+            <span>KT</span>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#hero" class="nav-link active" id="nav-hero">Home</a></li>
+            <li><a href="#about" class="nav-link" id="nav-about">About</a></li>
+            <li><a href="#skills" class="nav-link" id="nav-skills">Skills</a></li>
+            <li><a href="#projects" class="nav-link" id="nav-projects">Projects</a></li>
+            <li><a href="#experience" class="nav-link" id="nav-experience">Experience</a></li>
+            <li><a href="#education" class="nav-link" id="nav-education">Education</a></li>
+            <li><a href="#contact" class="nav-link" id="nav-contact">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <span class="icon-sun">☀️</span>
+                <span class="icon-moon">🌙</span>
+            </button>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
 
-<!-- ===== HERO SECTION ===== -->
-<section id="hero" class="hero-section">
-    <div class="hero-bg">
-        <div class="hero-blob blob1"></div>
-        <div class="hero-blob blob2"></div>
-        <div class="hero-blob blob3"></div>
-        <div class="grid-overlay"></div>
-    </div>
-    <div class="hero-content">
-        <div class="hero-badge">
-            <span class="badge-dot"></span>
-            Open to Opportunities
+    <!-- ===== HERO SECTION ===== -->
+    <section id="hero" class="hero-section">
+        <div class="hero-bg">
+            <div class="hero-blob blob1"></div>
+            <div class="hero-blob blob2"></div>
+            <div class="hero-blob blob3"></div>
+            <div class="grid-overlay"></div>
         </div>
-        <div class="hero-avatar-wrapper">
-            <div class="avatar-tilt" id="avatarTilt">
-                <div class="avatar-ring">
-                    <img src="PIC/proflepic.jpg" alt="Kaushik Tripathi" class="hero-avatar" id="heroAvatar" style="object-position: center 10%;">
-                </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Open to Opportunities
             </div>
-            <div class="avatar-status"></div>
-        </div>
-        <h1 class="hero-name">
-            <span class="text-gradient">Kaushik</span> Tripathi
-        </h1>
-        <p class="hero-tagline" id="heroTagline"><span id="typedText"></span><span class="typed-cursor"></span></p>
-        <p class="hero-desc">
-            BCA student at BBDU specialising in Data Science &amp; Artificial Intelligence.
-            Passionate about Python, Machine Learning, and turning data into actionable insights.
-        </p>
-        <div class="hero-cta">
-            <a href="#projects" class="btn btn-primary" id="heroViewProjects">View Projects</a>
-            <a href="Kaushik_Tripathi_Data_Analyst_Resume.docx" download class="btn btn-outline" id="heroResume">📄 Download Resume</a>
-            <a href="#contact" class="btn btn-outline" id="heroContact">Get In Touch</a>
-        </div>
-        <div class="hero-stats">
-            <div class="stat-item">
-                <span class="stat-num" data-count="5">0</span>
-                <span class="stat-label">Projects</span>
-            </div>
-            <div class="stat-divider"></div>
-            <div class="stat-item">
-                <span class="stat-num" data-count="10">0</span>
-                <span class="stat-label">Certifications</span>
-            </div>
-            <div class="stat-divider"></div>
-            <div class="stat-item">
-                <span class="stat-num">2026</span>
-                <span class="stat-label">Graduation</span>
-            </div>
-        </div>
-    </div>
-    <div class="scroll-indicator" id="scrollIndicator">
-        <div class="scroll-mouse">
-            <div class="scroll-wheel"></div>
-        </div>
-        <span>Scroll Down</span>
-    </div>
-</section>
-
-<!-- ===== ABOUT SECTION ===== -->
-<section id="about" class="section about-section">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-tag">Who I Am</span>
-            <h2 class="section-title">About <span class="text-gradient">Me</span></h2>
-        </div>
-        <div class="about-grid">
-            <div class="about-text glass-card">
-                <p>
-                    I am a motivated <strong>BCA student</strong> at Babu Banarasi Das University (BBDU),
-                    specialising in <strong>Data Science and Artificial Intelligence</strong>.
-                    With a strong foundation in Python and its scientific libraries, I am passionate
-                    about solving real-world problems through data-driven solutions.
-                </p>
-                <p>
-                    I am actively exploring <strong>Machine Learning</strong> and <strong>Deep Learning</strong>,
-                    driven by curiosity and analytical thinking. I continuously seek opportunities to learn,
-                    grow, and contribute to impactful AI and Data Science projects.
-                </p>
-                <p>
-                    Outside of academics, I have hands-on experience in industrial training and live
-                    internship programmes, working with real datasets and building end-to-end data
-                    analytics workflows.
-                </p>
-                <div class="about-info-grid">
-                    <div class="about-info-item">
-                        <span class="info-label">📍 Location</span>
-                        <span class="info-value">Lucknow, India</span>
-                    </div>
-                    <div class="about-info-item">
-                        <span class="info-label">🎓 Degree</span>
-                        <span class="info-value">BCA (2023–2026)</span>
-                    </div>
-                    <div class="about-info-item">
-                        <span class="info-label">📧 Email</span>
-                        <span class="info-value">tripathikaushik356@gmail.com</span>
-                    </div>
-                    <div class="about-info-item">
-                        <span class="info-label">📱 Phone</span>
-                        <span class="info-value">+91 9151711234</span>
+            <div class="hero-avatar-wrapper">
+                <div class="avatar-tilt" id="avatarTilt">
+                    <div class="avatar-ring">
+                        <img src="PIC/proflepic.jpg" alt="Kaushik Tripathi" class="hero-avatar" id="heroAvatar"
+                            style="object-position: center 10%;">
                     </div>
                 </div>
+                <div class="avatar-status"></div>
             </div>
-        </div>
-    </div>
-</section>
-
-<!-- ===== SKILLS SECTION ===== -->
-<section id="skills" class="section skills-section">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-tag">What I Know</span>
-            <h2 class="section-title">Technical <span class="text-gradient">Skills</span></h2>
-        </div>
-        <div class="skills-grid">
-            <div class="skill-category glass-card">
-                <div class="skill-cat-header">
-                    <span class="skill-cat-icon">🐍</span>
-                    <h3>Languages</h3>
-                </div>
-                <div class="skill-tags">
-                    <span class="skill-tag">Python</span>
-                    <span class="skill-tag">SQL</span>
-                    <span class="skill-tag">HTML5</span>
-                    <span class="skill-tag">CSS3</span>
-                </div>
+            <h1 class="hero-name">
+                <span class="text-gradient">Kaushik</span> Tripathi
+            </h1>
+            <p class="hero-tagline" id="heroTagline"><span id="typedText"></span><span class="typed-cursor"></span></p>
+            <p class="hero-desc">
+                BCA Graduate from BBDU, specialised in Data Science &amp; Artificial Intelligence.
+                Passionate about building real-world projects in Python, Machine Learning, and Data Analytics.
+            </p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary" id="heroViewProjects">View Projects</a>
+                <a href="Kaushik_Tripathi_Data_Analyst_Resume.docx" download class="btn btn-outline" id="heroResume">📄
+                    Download Resume</a>
+                <a href="#contact" class="btn btn-outline" id="heroContact">Get In Touch</a>
             </div>
-            <div class="skill-category glass-card">
-                <div class="skill-cat-header">
-                    <span class="skill-cat-icon">📊</span>
-                    <h3>Data &amp; Analytics</h3>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-num" data-count="5">0</span>
+                    <span class="stat-label">Projects</span>
                 </div>
-                <div class="skill-tags">
-                    <span class="skill-tag">Pandas</span>
-                    <span class="skill-tag">NumPy</span>
-                    <span class="skill-tag">Matplotlib</span>
-                    <span class="skill-tag">Seaborn</span>
-                    <span class="skill-tag">SciPy</span>
-                    <span class="skill-tag">Jupyter</span>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-num" data-count="10">0</span>
+                    <span class="stat-label">Certifications</span>
                 </div>
-            </div>
-            <div class="skill-category glass-card">
-                <div class="skill-cat-header">
-                    <span class="skill-cat-icon">🤖</span>
-                    <h3>ML / AI</h3>
-                </div>
-                <div class="skill-tags">
-                    <span class="skill-tag">Scikit-learn</span>
-                    <span class="skill-tag">Machine Learning</span>
-                    <span class="skill-tag">Deep Learning</span>
-                    <span class="skill-tag">EDA</span>
-                </div>
-            </div>
-            <div class="skill-category glass-card">
-                <div class="skill-cat-header">
-                    <span class="skill-cat-icon">🛠️</span>
-                    <h3>Tools &amp; Platforms</h3>
-                </div>
-                <div class="skill-tags">
-                    <span class="skill-tag">Git &amp; GitHub</span>
-                    <span class="skill-tag">VS Code</span>
-                    <span class="skill-tag">Google Colab</span>
-                    <span class="skill-tag">MS Excel</span>
-                    <span class="skill-tag">Power BI</span>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-num">✅</span>
+                    <span class="stat-label">Graduated</span>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
-<!-- ===== PROJECTS SECTION ===== -->
-<section id="projects" class="section projects-section">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-tag">What I've Built</span>
-            <h2 class="section-title">My <span class="text-gradient">Projects</span></h2>
+        <div class="scroll-indicator" id="scrollIndicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll Down</span>
         </div>
-        <div class="projects-grid">
+    </section>
 
-            <!-- Final Year Project (Featured) -->
-            <div class="project-card featured glass-card" id="projectFinalYear">
-                <div class="project-badge">🏆 Final Year Project</div>
-                <div class="project-header">
-                    <div class="project-icon">🌐</div>
-                    <div class="project-meta">
-                        <h3>International Debt Analysis Platform</h3>
-                        <div class="project-tags">
-                            <span class="ptag">Python</span>
-                            <span class="ptag">Pandas</span>
-                            <span class="ptag">Matplotlib</span>
-                            <span class="ptag">Seaborn</span>
-                            <span class="ptag">SQL</span>
-                            <span class="ptag">Power BI</span>
-                        </div>
-                    </div>
-                </div>
-                <p class="project-desc">
-                    A comprehensive data analytics platform that analyses international debt data across
-                    multiple countries and time periods. The platform ingests World Bank and IMF public
-                    debt datasets (5 South Asian economies), performs advanced ETL pipeline and statistical
-                    analysis, and generates interactive Power BI visualisations to uncover patterns in
-                    global debt dynamics, debt-to-GDP ratios, FDI flows, and IMF data.
-                </p>
-                <ul class="project-highlights">
-                    <li>🔍 Multi-country debt trend analysis with time-series visualisation</li>
-                    <li>📈 Debt-to-GDP ratio benchmarking across South Asian economies</li>
-                    <li>🗂️ Creditor composition breakdown (bilateral, multilateral, commercial)</li>
-                    <li>📊 Interactive Power BI dashboard for stakeholder reporting</li>
-                    <li>🧹 End-to-end pandas ETL pipeline and feature engineering</li>
-                </ul>
-                <div class="project-links">
-                    <a href="https://github.com/Kaushikkkkkk250106/INTERNATIONAL-DEBT-ANALYSIS-PLATFROM" target="_blank" class="btn btn-primary" id="projectFinalYearGithub">View on GitHub</a>
-                    <a href="KAUSHIK TRIPATHI SYNOPSIS - 12302598213 (1).pdf" target="_blank" class="btn btn-outline" id="projectFinalYearSynopsis">📋 View Synopsis</a>
-                </div>
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Who I Am</span>
+                <h2 class="section-title">About <span class="text-gradient">Me</span></h2>
             </div>
-
-            <!-- Project 2 -->
-            <div class="project-card glass-card" id="projectRetail">
-                <div class="project-header">
-                    <div class="project-icon">🛒</div>
-                    <div class="project-meta">
-                        <h3>Retail Data Cleaning &amp; Analysis</h3>
-                        <div class="project-tags">
-                            <span class="ptag">Python</span>
-                            <span class="ptag">Pandas</span>
-                            <span class="ptag">NumPy</span>
-                            <span class="ptag">Seaborn</span>
-                        </div>
-                    </div>
-                </div>
-                <p class="project-desc">
-                    End-to-end data wrangling on retail transaction data using Python, Pandas, and SciPy.
-                    Includes missing value handling, outlier detection (Z-Score), feature engineering,
-                    and business insights such as top customers and monthly sales trends.
-                </p>
-                <ul class="project-highlights">
-                    <li>🧹 Automated missing-value imputation pipeline</li>
-                    <li>🔎 Z-Score-based outlier detection &amp; removal</li>
-                    <li>📊 Monthly revenue trend visualisations</li>
-                    <li>🏆 Top-10 customer segmentation analysis</li>
-                </ul>
-                <div class="project-links">
-                    <a href="https://github.com/Kaushikkkkkk250106/retail-data-cleaning-analysis" target="_blank" class="btn btn-primary" id="projectRetailGithub">View on GitHub</a>
-                </div>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="project-card glass-card" id="projectPortfolio">
-                <div class="project-header">
-                    <div class="project-icon">💼</div>
-                    <div class="project-meta">
-                        <h3>Personal Portfolio Website</h3>
-                        <div class="project-tags">
-                            <span class="ptag">HTML5</span>
-                            <span class="ptag">CSS3</span>
-                            <span class="ptag">JavaScript</span>
-                        </div>
-                    </div>
-                </div>
-                <p class="project-desc">
-                    A modern, responsive personal portfolio website with glassmorphism design, smooth
-                    scroll animations, and a dark-theme aesthetic. Showcases skills, education,
-                    experience, and projects in a clean, professional layout.
-                </p>
-                <ul class="project-highlights">
-                    <li>✨ Glassmorphism &amp; gradient design system</li>
-                    <li>📱 Fully responsive across all devices</li>
-                    <li>🎨 Smooth scroll-reveal animations</li>
-                    <li>🌙 Dark/Light mode toggle</li>
-                </ul>
-                <div class="project-links">
-                    <a href="https://github.com/Kaushikkkkkk250106/Kaushik-portfolio" target="_blank" class="btn btn-primary" id="projectPortfolioGithub">View on GitHub</a>
-                </div>
-            </div>
-
-            <!-- Project 4: Vrinda Store Excel -->
-            <div class="project-card glass-card" id="projectVrinda">
-                <div class="project-header">
-                    <div class="project-icon">📊</div>
-                    <div class="project-meta">
-                        <h3>Vrinda Store 2022 – Sales Analysis</h3>
-                        <div class="project-tags">
-                            <span class="ptag">Excel</span>
-                            <span class="ptag">Pivot Tables</span>
-                            <span class="ptag">Data Visualisation</span>
-                        </div>
-                    </div>
-                </div>
-                <p class="project-desc">
-                    Sales data analysis of Vrinda Store 2022 — uncovering insights on revenue trends,
-                    customer demographics, top-performing states, and sales channels using Excel
-                    pivot tables and interactive charts.
-                </p>
-                <ul class="project-highlights">
-                    <li>📈 Revenue trend analysis across months</li>
-                    <li>👤 Customer demographic segmentation</li>
-                    <li>🗺️ State-wise top sales performance breakdown</li>
-                    <li>🛒 Multi-channel sales comparison</li>
-                </ul>
-                <div class="project-links">
-                    <a href="https://github.com/Kaushikkkkkk250106/Vrinda-Store-2022-Excel" target="_blank" class="btn btn-primary" id="projectVrindaGithub">View on GitHub</a>
-                </div>
-            </div>
-
-            <!-- Project 5: Online Retailer Power BI Dashboard -->
-            <div class="project-card glass-card" id="projectOnlineRetailer">
-                <div class="project-header">
-                    <div class="project-icon">⚡</div>
-                    <div class="project-meta">
-                        <h3>Online Retailer – Power BI Dashboard</h3>
-                        <div class="project-tags">
-                            <span class="ptag">Power BI</span>
-                            <span class="ptag">CSV</span>
-                            <span class="ptag">Data Analytics</span>
-                        </div>
-                    </div>
-                </div>
-                <p class="project-desc">
-                    E-Commerce Sales Analytics Dashboard analysing 1,500+ orders across product
-                    categories, profit margins, payment modes, and geographic regions (India).
-                    Built with Power BI and CSV datasets for Orders &amp; Details.
-                </p>
-                <ul class="project-highlights">
-                    <li>📦 Category-wise profit &amp; order analysis</li>
-                    <li>💳 Payment mode breakdown (COD, UPI, EMI)</li>
-                    <li>🗺️ State-level geographic sales insights</li>
-                    <li>📊 Interactive Power BI visuals with slicers</li>
-                </ul>
-                <div class="project-links">
-                    <a href="https://github.com/Kaushikkkkkk250106/Online-Retailer-Dashboard" target="_blank" class="btn btn-primary" id="projectOnlineRetailerGithub">View on GitHub</a>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- ===== EXPERIENCE SECTION ===== -->
-<section id="experience" class="section experience-section">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-tag">What I've Done</span>
-            <h2 class="section-title">Experience &amp; <span class="text-gradient">Training</span></h2>
-        </div>
-        <div class="timeline">
-
-            <!-- Industrial Training -->
-            <div class="timeline-item" id="expTechpile">
-                <div class="timeline-dot indigo"></div>
-                <div class="timeline-content glass-card">
-                    <div class="exp-header">
-                        <div class="exp-icon indigo-bg">🏢</div>
-                        <div>
-                            <h3>Industrial Training – Data Analytics</h3>
-                            <p class="exp-company">Techpile Technology Pvt. Ltd. &nbsp;|&nbsp; Lucknow, India</p>
-                            <span class="exp-duration">Jan 2026 – Apr 2026 &nbsp;(90-Day Industrial Training)</span>
-                        </div>
-                    </div>
-                    <div class="exp-badge">Industrial Training</div>
-                    <p class="exp-desc">
-                        Successfully completed a 90-day structured industrial training programme in
-                        <strong>Data Analytics</strong> at Techpile Technology Pvt. Ltd., Lucknow
-                        (Certificate Id: TechpileWT250085). Gained practical, industry-relevant exposure
-                        to the full data analytics lifecycle — from data acquisition and cleaning through
-                        to visualisation and insight generation.
+            <div class="about-grid">
+                <div class="about-text glass-card">
+                    <p>
+                        I am a motivated <strong>BCA student</strong> at Babu Banarasi Das University (BBDU),
+                        specialising in <strong>Data Science and Artificial Intelligence</strong>.
+                        With a strong foundation in Python and its scientific libraries, I am passionate
+                        about solving real-world problems through data-driven solutions.
                     </p>
-                    <ul class="exp-points">
-                        <li>Worked with real-world datasets and performed end-to-end data analysis</li>
-                        <li>Applied Python (Pandas, NumPy, Matplotlib) for data wrangling and EDA</li>
-                        <li>Built dashboards and reports to communicate findings to non-technical stakeholders</li>
-                        <li>Gained exposure to SQL for data querying and database management</li>
-                        <li>Participated in team code reviews and project presentations</li>
-                    </ul>
-                    <div class="exp-links">
-                        <a href="Certification/Techpile_Completion_Certificate.jpeg" target="_blank" class="btn btn-outline-sm" id="expTechpileCert">🏅 View Completion Certificate</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- iStudio Internship -->
-            <div class="timeline-item" id="expIstudio">
-                <div class="timeline-dot purple"></div>
-                <div class="timeline-content glass-card">
-                    <div class="exp-header">
-                        <div class="exp-icon purple-bg">📊</div>
-                        <div>
-                            <h3>Data Analytics Intern</h3>
-                            <p class="exp-company">iStudio Technologies</p>
-                            <span class="exp-duration">Jan 2026 to July 2026 (Online mode) &nbsp;(Internship via iCAT)</span>
-                        </div>
-                    </div>
-                    <div class="exp-badge">Internship</div>
-                    <p class="exp-desc">
-                        Selected for a Data Analytics Internship at iStudio after successfully qualifying
-                        the Internship Common Aptitude Test (<strong>iCAT</strong>). Focused on building
-                        strong foundations in data analytics through structured training and hands-on project work.
+                    <p>
+                        I am actively exploring <strong>Machine Learning</strong> and <strong>Deep Learning</strong>,
+                        driven by curiosity and analytical thinking. I continuously seek opportunities to learn,
+                        grow, and contribute to impactful AI and Data Science projects.
                     </p>
-                    <ul class="exp-points">
-                        <li>Qualified iCAT selection test from a competitive applicant pool</li>
-                        <li>Gained practical exposure to data analysis concepts and methodologies</li>
-                        <li>Developed industry-relevant skills through real-world problem-solving</li>
-                        <li>Completed a final capstone project earning a Training &amp; Internship Certificate</li>
-                    </ul>
-                    <div class="exp-links">
-                        <a href="Kaushik Tripathi - Data Analytics Internship - Offer Letter.pdf" target="_blank" class="btn btn-outline-sm" id="expOfferLetter">📄 View Offer Letter</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- Certifications -->
-        <div class="section-sub-header">
-            <h3 class="sub-title">🏅 Certifications</h3>
-        </div>
-        <div class="certs-grid">
-
-            <div class="cert-card glass-card" id="certTechpileCompletion">
-                <div class="cert-icon">🏆</div>
-                <div class="cert-info">
-                    <h4>Industrial Training – Data Analytics</h4>
-                    <p class="cert-issuer">Techpile Technology Pvt. Ltd.</p>
-                    <p class="cert-year">2026 &nbsp;(Jan – Apr)</p>
-                    <span class="cert-badge">Verified · ISO 9001:2015</span>
-                    <div class="cert-actions">
-                        <a href="Certification/Techpile_Completion_Certificate.jpeg" target="_blank" class="btn-cert-view" id="certViewTechpileCompletion">📄 View Certificate</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="cert-card glass-card" id="certDataScience">
-                <div class="cert-icon">📊</div>
-                <div class="cert-info">
-                    <h4>Data Science</h4>
-                    <p class="cert-issuer">BBDU / Techpile</p>
-                    <p class="cert-year">2024</p>
-                    <span class="cert-badge">Verified</span>
-                    <div class="cert-actions">
-                        <a href="Certification/KAUSHIK_TRIPATHI_33_DATA_SCIENCE.pdf" target="_blank" class="btn-cert-view" id="certViewDataScience">📄 View Certificate</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="cert-card glass-card" id="certNoSQL">
-                <div class="cert-icon">🗄️</div>
-                <div class="cert-info">
-                    <h4>NoSQL Databases</h4>
-                    <p class="cert-issuer">BBDU / Techpile</p>
-                    <p class="cert-year">2024</p>
-                    <span class="cert-badge">Verified</span>
-                    <div class="cert-actions">
-                        <a href="Certification/KAUSHIK_TRIPATHI_33_NOSQL.pdf" target="_blank" class="btn-cert-view" id="certViewNoSQL">📄 View Certificate</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="cert-card glass-card" id="certPredictive">
-                <div class="cert-icon">🤖</div>
-                <div class="cert-info">
-                    <h4>Predictive Modeling Fundamentals</h4>
-                    <p class="cert-issuer">BBDU / Techpile</p>
-                    <p class="cert-year">2024</p>
-                    <span class="cert-badge">Verified</span>
-                    <div class="cert-actions">
-                        <a href="Certification/KAUSHIK_TRIPATHI_33_PREDICTIVE_MODELING_FUNDAMENTALS_1.pdf" target="_blank" class="btn-cert-view" id="certViewPredictive">📄 View Certificate</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="cert-card glass-card" id="certPython">
-                <div class="cert-icon">🐍</div>
-                <div class="cert-info">
-                    <h4>Python for Data Science</h4>
-                    <p class="cert-issuer">BBDU / Techpile</p>
-                    <p class="cert-year">2024</p>
-                    <span class="cert-badge">Verified</span>
-                    <div class="cert-actions">
-                        <a href="Certification/KAUSHIK_TRIPATHI_BCADS33_PYTHON.pdf" target="_blank" class="btn-cert-view" id="certViewPython">📄 View Certificate</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="cert-card glass-card" id="certIBMCognos">
-                <div class="cert-icon">📈</div>
-                <div class="cert-info">
-                    <h4>IBM Cognos Analytics Reporting</h4>
-                    <p class="cert-issuer">IBM</p>
-                    <p class="cert-year">2024</p>
-                    <span class="cert-badge">Verified</span>
-                    <div class="cert-actions">
-                        <a href="Certification/IBM_Cognos_Analytics_V11_1_x_Reporting_Essentials_Badge20241004-8-v9ohdh.pdf" target="_blank" class="btn-cert-view" id="certViewIBMCognos">📄 View Certificate</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="cert-card glass-card" id="certPowerBI">
-                <div class="cert-icon">⚡</div>
-                <div class="cert-info">
-                    <h4>Power BI</h4>
-                    <p class="cert-issuer">Microsoft / Online</p>
-                    <p class="cert-year">2024</p>
-                    <span class="cert-badge">Verified</span>
-                    <div class="cert-actions">
-                        <a href="Certification/powerbi.pdf" target="_blank" class="btn-cert-view" id="certViewPowerBI">📄 View Certificate</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="cert-card glass-card" id="certParticipation">
-                <div class="cert-icon">🏆</div>
-                <div class="cert-info">
-                    <h4>Participation Certificate</h4>
-                    <p class="cert-issuer">Event / Competition</p>
-                    <p class="cert-year">2024</p>
-                    <span class="cert-badge">Completed</span>
-                    <div class="cert-actions">
-                        <a href="Certification/Kaushik Tripathi - Participation Certificate.pdf" target="_blank" class="btn-cert-view" id="certViewParticipation">📄 View Certificate</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="cert-card glass-card" id="certCompletion">
-                <div class="cert-icon">🎓</div>
-                <div class="cert-info">
-                    <h4>Course Completion Certificate</h4>
-                    <p class="cert-issuer">Online Platform</p>
-                    <p class="cert-year">2024</p>
-                    <span class="cert-badge">Completed</span>
-                    <div class="cert-actions">
-                        <a href="Certification/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_698561ec4621ac38ffb3e5e6_1770363340216_completion_certificate_copy.pdf" target="_blank" class="btn-cert-view" id="certViewCompletion">📄 View Certificate</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ===== NEW CERTIFICATE ===== -->
-            <div class="cert-card glass-card new-cert" id="certGenAI">
-                <div class="cert-icon">🧠</div>
-                <div class="cert-info">
-                    <h4>What Is Generative AI</h4>
-                    <p class="cert-issuer">LinkedIn Learning</p>
-                    <p class="cert-year">2025</p>
-                    <span class="cert-badge">Completed</span>
-                    <div class="cert-actions">
-                        <a href="Certification/CertificateOfCompletion_What Is Generative AI (1).pdf" target="_blank" class="btn-cert-view" id="certViewGenAI">📄 View Certificate</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- ===== EDUCATION SECTION ===== -->
-<section id="education" class="section education-section">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-tag">My Academic Journey</span>
-            <h2 class="section-title">Education &amp; <span class="text-gradient">Qualifications</span></h2>
-        </div>
-        <div class="edu-timeline">
-
-            <div class="edu-card glass-card" id="eduBCA">
-                <div class="edu-year-badge">2023 – 2026 ✅</div>
-                <div class="edu-content">
-                    <div class="edu-degree-icon">🎓</div>
-                    <div>
-                        <h3>Bachelor of Computer Applications (BCA)</h3>
-                        <p class="edu-institution">Babu Banarasi Das University (BBDU), Lucknow</p>
-                        <p class="edu-spec">Specialisation: Data Science &amp; Artificial Intelligence</p>
-                        <div class="edu-details">
-                            <span>📋 Roll No: 1230258213</span>
-                            <span>🔑 Student Code: KAU | Mother Code: NEE</span>
+                    <p>
+                        Outside of academics, I have hands-on experience in industrial training and live
+                        internship programmes, working with real datasets and building end-to-end data
+                        analytics workflows.
+                    </p>
+                    <div class="about-info-grid">
+                        <div class="about-info-item">
+                            <span class="info-label">📍 Location</span>
+                            <span class="info-value">Lucknow, India</span>
                         </div>
-                        <div class="edu-completed-badge">🎉 Graduated – June 2026</div>
+                        <div class="about-info-item">
+                            <span class="info-label">🎓 Degree</span>
+                            <span class="info-value">BCA – Graduated ✅ (2026)</span>
+                        </div>
+                        <div class="about-info-item">
+                            <span class="info-label">📧 Email</span>
+                            <span class="info-value">tripathikaushik356@gmail.com</span>
+                        </div>
+                        <div class="about-info-item">
+                            <span class="info-label">📱 Phone</span>
+                            <span class="info-value">+91 9151711234</span>
+                        </div>
                     </div>
-                </div>
-                <div class="edu-links">
-                    <a href="https://examcell.bbdu.ac.in/bbdu-result/" target="_blank" class="btn btn-outline-sm" id="eduBCAResult">View Results</a>
-                </div>
-            </div>
-
-            <div class="edu-card glass-card" id="eduClass12">
-                <div class="edu-year-badge">2023</div>
-                <div class="edu-content">
-                    <div class="edu-degree-icon">📚</div>
-                    <div>
-                        <h3>Class XII (Science)</h3>
-                        <p class="edu-institution">Kendriya Vidyalaya</p>
-                        <p class="edu-spec">Central Board of Secondary Education (CBSE)</p>
-                    </div>
-                </div>
-                <div class="edu-links">
-                    <a href="class 12.pdf" target="_blank" class="btn btn-outline-sm" id="edu12Score">View Score Card</a>
-                </div>
-            </div>
-
-            <div class="edu-card glass-card" id="eduClass10">
-                <div class="edu-year-badge">2021</div>
-                <div class="edu-content">
-                    <div class="edu-degree-icon">🏫</div>
-                    <div>
-                        <h3>Class X</h3>
-                        <p class="edu-institution">Kendriya Vidyalaya</p>
-                        <p class="edu-spec">Central Board of Secondary Education (CBSE)</p>
-                    </div>
-                </div>
-                <div class="edu-links">
-                    <a href="class 10.pdf" target="_blank" class="btn btn-outline-sm" id="edu10Score">View Score Card</a>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- ===== CONTACT SECTION ===== -->
-<section id="contact" class="section contact-section">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-tag">Let's Connect</span>
-            <h2 class="section-title">Get In <span class="text-gradient">Touch</span></h2>
-        </div>
-        <p class="contact-intro">
-            I'm always open to discussing new opportunities, collaborations, or just having a conversation about data &amp; AI.
-        </p>
-        <div class="contact-grid">
-            <div class="contact-info glass-card">
-                <div class="contact-item" id="contactEmail">
-                    <div class="contact-icon">📧</div>
-                    <div>
-                        <p class="contact-label">Email</p>
-                        <a href="mailto:tripathikaushik356@gmail.com" class="contact-value">tripathikaushik356@gmail.com</a>
-                    </div>
-                </div>
-                <div class="contact-item" id="contactPhone">
-                    <div class="contact-icon">📱</div>
-                    <div>
-                        <p class="contact-label">Phone</p>
-                        <a href="tel:+919151711234" class="contact-value">+91 9151711234</a>
-                    </div>
-                </div>
-                <div class="contact-item" id="contactLocation">
-                    <div class="contact-icon">📍</div>
-                    <div>
-                        <p class="contact-label">Location</p>
-                        <span class="contact-value">Lucknow, Uttar Pradesh, India</span>
-                    </div>
-                </div>
-                <div class="contact-socials">
-                    <a href="https://www.linkedin.com/feed/" target="_blank" class="social-btn linkedin" id="contactLinkedIn">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
-                        LinkedIn
-                    </a>
-                    <a href="https://www.instagram.com/kaushikk_tripathi/" target="_blank" class="social-btn instagram" id="contactInstagram">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-                        Instagram
-                    </a>
-                    <a href="https://github.com/Kaushikkkkkk250106" target="_blank" class="social-btn github" id="contactGithub">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-                        GitHub
-                    </a>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- ===== FOOTER ===== -->
-<footer class="site-footer">
-    <div class="container">
-        <p>Designed &amp; Built by <span class="text-gradient">Kaushik Tripathi</span> &nbsp;|&nbsp; BCA – BBDU, Lucknow &nbsp;|&nbsp; 2026</p>
-        <p class="footer-sub">Made with ❤️ and lots of ☕ • Data Science &amp; AI Enthusiast</p>
-    </div>
-</footer>
+    <!-- ===== SKILLS SECTION ===== -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What I Know</span>
+                <h2 class="section-title">Technical <span class="text-gradient">Skills</span></h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category glass-card">
+                    <div class="skill-cat-header">
+                        <span class="skill-cat-icon">🐍</span>
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                    </div>
+                </div>
+                <div class="skill-category glass-card">
+                    <div class="skill-cat-header">
+                        <span class="skill-cat-icon">📊</span>
+                        <h3>Data &amp; Analytics</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Matplotlib</span>
+                        <span class="skill-tag">Seaborn</span>
+                        <span class="skill-tag">SciPy</span>
+                        <span class="skill-tag">Jupyter</span>
+                    </div>
+                </div>
+                <div class="skill-category glass-card">
+                    <div class="skill-cat-header">
+                        <span class="skill-cat-icon">🤖</span>
+                        <h3>ML / AI</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Deep Learning</span>
+                        <span class="skill-tag">EDA</span>
+                    </div>
+                </div>
+                <div class="skill-category glass-card">
+                    <div class="skill-cat-header">
+                        <span class="skill-cat-icon">🛠️</span>
+                        <h3>Tools &amp; Platforms</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git &amp; GitHub</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Google Colab</span>
+                        <span class="skill-tag">MS Excel</span>
+                        <span class="skill-tag">Power BI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- Back to Top -->
-<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What I've Built</span>
+                <h2 class="section-title">My <span class="text-gradient">Projects</span></h2>
+            </div>
+            <div class="projects-grid">
 
-<script>
-// ======================================================
-// THEME TOGGLE
-// ======================================================
-const html = document.documentElement;
-const themeToggle = document.getElementById('themeToggle');
-const STORAGE_KEY = 'kt-theme';
+                <!-- Final Year Project (Featured) -->
+                <div class="project-card featured glass-card" id="projectFinalYear">
+                    <div class="project-badge">🏆 Final Year Project</div>
+                    <div class="project-header">
+                        <div class="project-icon">🌐</div>
+                        <div class="project-meta">
+                            <h3>International Debt Analysis Platform</h3>
+                            <div class="project-tags">
+                                <span class="ptag">Python</span>
+                                <span class="ptag">Pandas</span>
+                                <span class="ptag">Matplotlib</span>
+                                <span class="ptag">Seaborn</span>
+                                <span class="ptag">SQL</span>
+                                <span class="ptag">Power BI</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="project-desc">
+                        A comprehensive data analytics platform that analyses international debt data across
+                        multiple countries and time periods. The platform ingests World Bank and IMF public
+                        debt datasets (5 South Asian economies), performs advanced ETL pipeline and statistical
+                        analysis, and generates interactive Power BI visualisations to uncover patterns in
+                        global debt dynamics, debt-to-GDP ratios, FDI flows, and IMF data.
+                    </p>
+                    <ul class="project-highlights">
+                        <li>🔍 Multi-country debt trend analysis with time-series visualisation</li>
+                        <li>📈 Debt-to-GDP ratio benchmarking across South Asian economies</li>
+                        <li>🗂️ Creditor composition breakdown (bilateral, multilateral, commercial)</li>
+                        <li>📊 Interactive Power BI dashboard for stakeholder reporting</li>
+                        <li>🧹 End-to-end pandas ETL pipeline and feature engineering</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://github.com/Kaushikkkkkk250106/INTERNATIONAL-DEBT-ANALYSIS-PLATFROM"
+                            target="_blank" class="btn btn-primary" id="projectFinalYearGithub">View on GitHub</a>
+                        <a href="KAUSHIK TRIPATHI SYNOPSIS - 12302598213 (1).pdf" target="_blank"
+                            class="btn btn-outline" id="projectFinalYearSynopsis">📋 View Synopsis</a>
+                    </div>
+                </div>
 
-function applyTheme(theme) {
-    html.setAttribute('data-theme', theme);
-    localStorage.setItem(STORAGE_KEY, theme);
-}
+                <!-- Project 2 -->
+                <div class="project-card glass-card" id="projectRetail">
+                    <div class="project-header">
+                        <div class="project-icon">🛒</div>
+                        <div class="project-meta">
+                            <h3>Retail Data Cleaning &amp; Analysis</h3>
+                            <div class="project-tags">
+                                <span class="ptag">Python</span>
+                                <span class="ptag">Pandas</span>
+                                <span class="ptag">NumPy</span>
+                                <span class="ptag">Seaborn</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="project-desc">
+                        End-to-end data wrangling on retail transaction data using Python, Pandas, and SciPy.
+                        Includes missing value handling, outlier detection (Z-Score), feature engineering,
+                        and business insights such as top customers and monthly sales trends.
+                    </p>
+                    <ul class="project-highlights">
+                        <li>🧹 Automated missing-value imputation pipeline</li>
+                        <li>🔎 Z-Score-based outlier detection &amp; removal</li>
+                        <li>📊 Monthly revenue trend visualisations</li>
+                        <li>🏆 Top-10 customer segmentation analysis</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://github.com/Kaushikkkkkk250106/retail-data-cleaning-analysis" target="_blank"
+                            class="btn btn-primary" id="projectRetailGithub">View on GitHub</a>
+                    </div>
+                </div>
 
-// Init from storage
-const savedTheme = localStorage.getItem(STORAGE_KEY) || 'dark';
-applyTheme(savedTheme);
+                <!-- Project 3 -->
+                <div class="project-card glass-card" id="projectPortfolio">
+                    <div class="project-header">
+                        <div class="project-icon">💼</div>
+                        <div class="project-meta">
+                            <h3>Personal Portfolio Website</h3>
+                            <div class="project-tags">
+                                <span class="ptag">HTML5</span>
+                                <span class="ptag">CSS3</span>
+                                <span class="ptag">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="project-desc">
+                        A modern, responsive personal portfolio website with glassmorphism design, smooth
+                        scroll animations, and a dark-theme aesthetic. Showcases skills, education,
+                        experience, and projects in a clean, professional layout.
+                    </p>
+                    <ul class="project-highlights">
+                        <li>✨ Glassmorphism &amp; gradient design system</li>
+                        <li>📱 Fully responsive across all devices</li>
+                        <li>🎨 Smooth scroll-reveal animations</li>
+                        <li>🌙 Dark/Light mode toggle</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://github.com/Kaushikkkkkk250106/Kaushik-portfolio" target="_blank"
+                            class="btn btn-primary" id="projectPortfolioGithub">View on GitHub</a>
+                    </div>
+                </div>
 
-themeToggle.addEventListener('click', () => {
-    const current = html.getAttribute('data-theme');
-    applyTheme(current === 'dark' ? 'light' : 'dark');
-});
+                <!-- Project 4: Vrinda Store Excel -->
+                <div class="project-card glass-card" id="projectVrinda">
+                    <div class="project-header">
+                        <div class="project-icon">📊</div>
+                        <div class="project-meta">
+                            <h3>Vrinda Store 2022 – Sales Analysis</h3>
+                            <div class="project-tags">
+                                <span class="ptag">Excel</span>
+                                <span class="ptag">Pivot Tables</span>
+                                <span class="ptag">Data Visualisation</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="project-desc">
+                        Sales data analysis of Vrinda Store 2022 — uncovering insights on revenue trends,
+                        customer demographics, top-performing states, and sales channels using Excel
+                        pivot tables and interactive charts.
+                    </p>
+                    <ul class="project-highlights">
+                        <li>📈 Revenue trend analysis across months</li>
+                        <li>👤 Customer demographic segmentation</li>
+                        <li>🗺️ State-wise top sales performance breakdown</li>
+                        <li>🛒 Multi-channel sales comparison</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://github.com/Kaushikkkkkk250106/Vrinda-Store-2022-Excel" target="_blank"
+                            class="btn btn-primary" id="projectVrindaGithub">View on GitHub</a>
+                    </div>
+                </div>
 
-// ======================================================
-// PARTICLE CANVAS
-// ======================================================
-(function initParticles() {
-    const canvas = document.getElementById('particles-canvas');
-    const ctx = canvas.getContext('2d');
-    let W, H, particles = [];
+                <!-- Project 5: Online Retailer Power BI Dashboard -->
+                <div class="project-card glass-card" id="projectOnlineRetailer">
+                    <div class="project-header">
+                        <div class="project-icon">⚡</div>
+                        <div class="project-meta">
+                            <h3>Online Retailer – Power BI Dashboard</h3>
+                            <div class="project-tags">
+                                <span class="ptag">Power BI</span>
+                                <span class="ptag">CSV</span>
+                                <span class="ptag">Data Analytics</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="project-desc">
+                        E-Commerce Sales Analytics Dashboard analysing 1,500+ orders across product
+                        categories, profit margins, payment modes, and geographic regions (India).
+                        Built with Power BI and CSV datasets for Orders &amp; Details.
+                    </p>
+                    <ul class="project-highlights">
+                        <li>📦 Category-wise profit &amp; order analysis</li>
+                        <li>💳 Payment mode breakdown (COD, UPI, EMI)</li>
+                        <li>🗺️ State-level geographic sales insights</li>
+                        <li>📊 Interactive Power BI visuals with slicers</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://github.com/Kaushikkkkkk250106/Online-Retailer-Dashboard" target="_blank"
+                            class="btn btn-primary" id="projectOnlineRetailerGithub">View on GitHub</a>
+                    </div>
+                </div>
 
-    function resize() {
-        W = canvas.width  = window.innerWidth;
-        H = canvas.height = window.innerHeight;
-    }
-    window.addEventListener('resize', resize);
-    resize();
+            </div>
+        </div>
+    </section>
 
-    const COUNT = 80;
-    function mkParticle() {
-        return {
-            x: Math.random() * W,
-            y: Math.random() * H,
-            r: Math.random() * 1.6 + 0.4,
-            dx: (Math.random() - 0.5) * 0.4,
-            dy: (Math.random() - 0.5) * 0.4,
-            a: Math.random() * 0.6 + 0.2,
-        };
-    }
-    for (let i = 0; i < COUNT; i++) particles.push(mkParticle());
+    <!-- ===== EXPERIENCE SECTION ===== -->
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What I've Done</span>
+                <h2 class="section-title">Experience &amp; <span class="text-gradient">Training</span></h2>
+            </div>
+            <div class="timeline">
 
-    function draw() {
-        ctx.clearRect(0, 0, W, H);
-        const isDark = html.getAttribute('data-theme') !== 'light';
-        const baseColor = isDark ? '108,99,255' : '91,82,232';
-        const lineColor = isDark ? 'rgba(108,99,255,' : 'rgba(91,82,232,';
+                <!-- Industrial Training -->
+                <div class="timeline-item" id="expTechpile">
+                    <div class="timeline-dot indigo"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="exp-header">
+                            <div class="exp-icon indigo-bg">🏢</div>
+                            <div>
+                                <h3>Industrial Training – Data Analytics</h3>
+                                <p class="exp-company">Techpile Technology Pvt. Ltd. &nbsp;|&nbsp; Lucknow, India</p>
+                                <span class="exp-duration">Jan 2026 – Apr 2026 &nbsp;(90-Day Industrial Training)</span>
+                            </div>
+                        </div>
+                        <div class="exp-badge">Industrial Training</div>
+                        <p class="exp-desc">
+                            Successfully completed a 90-day structured industrial training programme in
+                            <strong>Data Analytics</strong> at Techpile Technology Pvt. Ltd., Lucknow
+                            (Certificate Id: TechpileWT250085). Gained practical, industry-relevant exposure
+                            to the full data analytics lifecycle — from data acquisition and cleaning through
+                            to visualisation and insight generation.
+                        </p>
+                        <ul class="exp-points">
+                            <li>Worked with real-world datasets and performed end-to-end data analysis</li>
+                            <li>Applied Python (Pandas, NumPy, Matplotlib) for data wrangling and EDA</li>
+                            <li>Built dashboards and reports to communicate findings to non-technical stakeholders</li>
+                            <li>Gained exposure to SQL for data querying and database management</li>
+                            <li>Participated in team code reviews and project presentations</li>
+                        </ul>
+                        <div class="exp-links">
+                            <a href="Certification/Techpile_Completion_Certificate.jpeg" target="_blank"
+                                class="btn btn-outline-sm" id="expTechpileCert">🏅 View Completion Certificate</a>
+                        </div>
+                    </div>
+                </div>
 
-        particles.forEach((p, i) => {
-            p.x += p.dx; p.y += p.dy;
-            if (p.x < 0) p.x = W; if (p.x > W) p.x = 0;
-            if (p.y < 0) p.y = H; if (p.y > H) p.y = 0;
+                <!-- iStudio Internship -->
+                <div class="timeline-item" id="expIstudio">
+                    <div class="timeline-dot purple"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="exp-header">
+                            <div class="exp-icon purple-bg">📊</div>
+                            <div>
+                                <h3>Data Analytics Intern</h3>
+                                <p class="exp-company">iStudio Technologies &nbsp;|&nbsp; Online Mode</p>
+                                <span class="exp-duration">Jan 2026 – Jul 2026 &nbsp;(6-Month Online Internship via
+                                    iCAT)</span>
+                            </div>
+                        </div>
+                        <div class="exp-badge">Internship</div>
+                        <p class="exp-desc">
+                            Selected for a Data Analytics Internship at iStudio Technologies after qualifying
+                            the Internship Common Aptitude Test (<strong>iCAT</strong>). Completed a structured
+                            online programme covering the full data analytics lifecycle with hands-on project
+                            deliverables.
+                        </p>
+                        <ul class="exp-points">
+                            <li>Qualified iCAT selection test from a competitive applicant pool</li>
+                            <li>Completed 6-month structured online training in data analytics tools &amp; workflows
+                            </li>
+                            <li>Performed exploratory data analysis and built end-to-end analytics pipelines</li>
+                            <li>Submitted final capstone project earning both a Training &amp; an Internship Certificate
+                            </li>
+                        </ul>
+                        <div class="exp-links">
+                            <a href="Kaushik Tripathi - Data Analytics Internship - Offer Letter.pdf" target="_blank"
+                                class="btn btn-outline-sm" id="expOfferLetter">📄 Offer Letter</a>
+                            <a href="Kaushik Tripathi - Data Analytics Internship - Training.pdf" target="_blank"
+                                class="btn btn-outline-sm" id="expTrainingCert">🏅 Training Certificate</a>
+                            <a href="Kaushik Tripathi - Data Analytics Internship - Internship.pdf" target="_blank"
+                                class="btn btn-outline-sm" id="expInternshipCert">🏅 Internship Certificate</a>
+                        </div>
+                    </div>
+                </div>
 
-            ctx.beginPath();
-            ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-            ctx.fillStyle = `rgba(${baseColor},${p.a})`;
-            ctx.fill();
+            </div>
 
-            // Connect nearby particles
-            for (let j = i + 1; j < particles.length; j++) {
-                const q = particles[j];
-                const dist = Math.hypot(p.x - q.x, p.y - q.y);
-                if (dist < 120) {
+            <!-- Certifications -->
+            <div class="section-sub-header">
+                <h3 class="sub-title">🏅 Certifications</h3>
+            </div>
+            <div class="certs-grid">
+
+                <div class="cert-card glass-card" id="certTechpileCompletion">
+                    <div class="cert-icon">🏆</div>
+                    <div class="cert-info">
+                        <h4>Industrial Training – Data Analytics</h4>
+                        <p class="cert-issuer">Techpile Technology Pvt. Ltd.</p>
+                        <p class="cert-year">2026 &nbsp;(Jan – Apr)</p>
+                        <span class="cert-badge">Verified · ISO 9001:2015</span>
+                        <div class="cert-actions">
+                            <a href="Certification/Techpile_Completion_Certificate.jpeg" target="_blank"
+                                class="btn-cert-view" id="certViewTechpileCompletion">📄 View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cert-card glass-card" id="certDataScience">
+                    <div class="cert-icon">📊</div>
+                    <div class="cert-info">
+                        <h4>Data Science</h4>
+                        <p class="cert-issuer">BBDU / Techpile</p>
+                        <p class="cert-year">2024</p>
+                        <span class="cert-badge">Verified</span>
+                        <div class="cert-actions">
+                            <a href="Certification/KAUSHIK_TRIPATHI_33_DATA_SCIENCE.pdf" target="_blank"
+                                class="btn-cert-view" id="certViewDataScience">📄 View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cert-card glass-card" id="certNoSQL">
+                    <div class="cert-icon">🗄️</div>
+                    <div class="cert-info">
+                        <h4>NoSQL Databases</h4>
+                        <p class="cert-issuer">BBDU / Techpile</p>
+                        <p class="cert-year">2024</p>
+                        <span class="cert-badge">Verified</span>
+                        <div class="cert-actions">
+                            <a href="Certification/KAUSHIK_TRIPATHI_33_NOSQL.pdf" target="_blank" class="btn-cert-view"
+                                id="certViewNoSQL">📄 View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cert-card glass-card" id="certPredictive">
+                    <div class="cert-icon">🤖</div>
+                    <div class="cert-info">
+                        <h4>Predictive Modeling Fundamentals</h4>
+                        <p class="cert-issuer">BBDU / Techpile</p>
+                        <p class="cert-year">2024</p>
+                        <span class="cert-badge">Verified</span>
+                        <div class="cert-actions">
+                            <a href="Certification/KAUSHIK_TRIPATHI_33_PREDICTIVE_MODELING_FUNDAMENTALS_1.pdf"
+                                target="_blank" class="btn-cert-view" id="certViewPredictive">📄 View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cert-card glass-card" id="certPython">
+                    <div class="cert-icon">🐍</div>
+                    <div class="cert-info">
+                        <h4>Python for Data Science</h4>
+                        <p class="cert-issuer">BBDU / Techpile</p>
+                        <p class="cert-year">2024</p>
+                        <span class="cert-badge">Verified</span>
+                        <div class="cert-actions">
+                            <a href="Certification/KAUSHIK_TRIPATHI_BCADS33_PYTHON.pdf" target="_blank"
+                                class="btn-cert-view" id="certViewPython">📄 View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cert-card glass-card" id="certIBMCognos">
+                    <div class="cert-icon">📈</div>
+                    <div class="cert-info">
+                        <h4>IBM Cognos Analytics Reporting</h4>
+                        <p class="cert-issuer">IBM</p>
+                        <p class="cert-year">2024</p>
+                        <span class="cert-badge">Verified</span>
+                        <div class="cert-actions">
+                            <a href="Certification/IBM_Cognos_Analytics_V11_1_x_Reporting_Essentials_Badge20241004-8-v9ohdh.pdf"
+                                target="_blank" class="btn-cert-view" id="certViewIBMCognos">📄 View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cert-card glass-card" id="certPowerBI">
+                    <div class="cert-icon">⚡</div>
+                    <div class="cert-info">
+                        <h4>Power BI</h4>
+                        <p class="cert-issuer">Microsoft / Online</p>
+                        <p class="cert-year">2024</p>
+                        <span class="cert-badge">Verified</span>
+                        <div class="cert-actions">
+                            <a href="Certification/powerbi.pdf" target="_blank" class="btn-cert-view"
+                                id="certViewPowerBI">📄 View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cert-card glass-card" id="certParticipation">
+                    <div class="cert-icon">🏆</div>
+                    <div class="cert-info">
+                        <h4>Participation Certificate</h4>
+                        <p class="cert-issuer">Event / Competition</p>
+                        <p class="cert-year">2024</p>
+                        <span class="cert-badge">Completed</span>
+                        <div class="cert-actions">
+                            <a href="Certification/Kaushik Tripathi - Participation Certificate.pdf" target="_blank"
+                                class="btn-cert-view" id="certViewParticipation">📄 View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cert-card glass-card" id="certCompletion">
+                    <div class="cert-icon">🎓</div>
+                    <div class="cert-info">
+                        <h4>Course Completion Certificate</h4>
+                        <p class="cert-issuer">Online Platform</p>
+                        <p class="cert-year">2024</p>
+                        <span class="cert-badge">Completed</span>
+                        <div class="cert-actions">
+                            <a href="Certification/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_698561ec4621ac38ffb3e5e6_1770363340216_completion_certificate_copy.pdf"
+                                target="_blank" class="btn-cert-view" id="certViewCompletion">📄 View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== NEW CERTIFICATE ===== -->
+                <div class="cert-card glass-card new-cert" id="certGenAI">
+                    <div class="cert-icon">🧠</div>
+                    <div class="cert-info">
+                        <h4>What Is Generative AI</h4>
+                        <p class="cert-issuer">LinkedIn Learning</p>
+                        <p class="cert-year">2025</p>
+                        <span class="cert-badge">Completed</span>
+                        <div class="cert-actions">
+                            <a href="Certification/CertificateOfCompletion_What Is Generative AI (1).pdf"
+                                target="_blank" class="btn-cert-view" id="certViewGenAI">📄 View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- iStudio Training Certificate -->
+                <div class="cert-card glass-card" id="certIStudioTraining">
+                    <div class="cert-icon">🏅</div>
+                    <div class="cert-info">
+                        <h4>Data Analytics Training Certificate</h4>
+                        <p class="cert-issuer">iStudio Technologies</p>
+                        <p class="cert-year">2026 &nbsp;(Jan – Jul)</p>
+                        <span class="cert-badge">Verified · Online</span>
+                        <div class="cert-actions">
+                            <a href="Kaushik Tripathi - Data Analytics Internship - Training.pdf" target="_blank"
+                                class="btn-cert-view" id="certViewIStudioTraining">📄 View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- iStudio Internship Certificate -->
+                <div class="cert-card glass-card" id="certIStudioInternship">
+                    <div class="cert-icon">💼</div>
+                    <div class="cert-info">
+                        <h4>Data Analytics Internship Certificate</h4>
+                        <p class="cert-issuer">iStudio Technologies</p>
+                        <p class="cert-year">2026 &nbsp;(Jan – Jul)</p>
+                        <span class="cert-badge">Verified · Online</span>
+                        <div class="cert-actions">
+                            <a href="Kaushik Tripathi - Data Analytics Internship - Internship.pdf" target="_blank"
+                                class="btn-cert-view" id="certViewIStudioInternship">📄 View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EDUCATION SECTION ===== -->
+    <section id="education" class="section education-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Academic Journey</span>
+                <h2 class="section-title">Education &amp; <span class="text-gradient">Qualifications</span></h2>
+            </div>
+            <div class="edu-timeline">
+
+                <div class="edu-card glass-card" id="eduBCA">
+                    <div class="edu-year-badge">2023 – 2026</div>
+                    <div class="edu-content">
+                        <div class="edu-degree-icon">🎓</div>
+                        <div>
+                            <h3>Bachelor of Computer Applications (BCA)</h3>
+                            <p class="edu-institution">Babu Banarasi Das University (BBDU), Lucknow</p>
+                            <p class="edu-spec">Specialisation: Data Science &amp; Artificial Intelligence</p>
+                            <div class="edu-details">
+                                <span>📋 Roll No: 1230258213</span>
+                                <span>🔑 Student Code: KAU | Mother Code: NEE</span>
+                            </div>
+                            <div class="edu-graduated-pill">🎉 Graduated – June 2026</div>
+                        </div>
+                    </div>
+                    <div class="edu-links">
+                        <a href="https://examcell.bbdu.ac.in/bbdu-result/" target="_blank" class="btn btn-outline-sm"
+                            id="eduBCAResult">View Results</a>
+                    </div>
+                </div>
+
+                <div class="edu-card glass-card" id="eduClass12">
+                    <div class="edu-year-badge">2023</div>
+                    <div class="edu-content">
+                        <div class="edu-degree-icon">📚</div>
+                        <div>
+                            <h3>Class XII (Science)</h3>
+                            <p class="edu-institution">Kendriya Vidyalaya</p>
+                            <p class="edu-spec">Central Board of Secondary Education (CBSE)</p>
+                        </div>
+                    </div>
+                    <div class="edu-links">
+                        <a href="class 12.pdf" target="_blank" class="btn btn-outline-sm" id="edu12Score">View Score
+                            Card</a>
+                    </div>
+                </div>
+
+                <div class="edu-card glass-card" id="eduClass10">
+                    <div class="edu-year-badge">2021</div>
+                    <div class="edu-content">
+                        <div class="edu-degree-icon">🏫</div>
+                        <div>
+                            <h3>Class X</h3>
+                            <p class="edu-institution">Kendriya Vidyalaya</p>
+                            <p class="edu-spec">Central Board of Secondary Education (CBSE)</p>
+                        </div>
+                    </div>
+                    <div class="edu-links">
+                        <a href="class 10.pdf" target="_blank" class="btn btn-outline-sm" id="edu10Score">View Score
+                            Card</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Let's Connect</span>
+                <h2 class="section-title">Get In <span class="text-gradient">Touch</span></h2>
+            </div>
+            <p class="contact-intro">
+                I'm always open to discussing new opportunities, collaborations, or just having a conversation about
+                data &amp; AI.
+            </p>
+            <div class="contact-grid">
+                <div class="contact-info glass-card">
+                    <div class="contact-item" id="contactEmail">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <p class="contact-label">Email</p>
+                            <a href="mailto:tripathikaushik356@gmail.com"
+                                class="contact-value">tripathikaushik356@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item" id="contactPhone">
+                        <div class="contact-icon">📱</div>
+                        <div>
+                            <p class="contact-label">Phone</p>
+                            <a href="tel:+919151711234" class="contact-value">+91 9151711234</a>
+                        </div>
+                    </div>
+                    <div class="contact-item" id="contactLocation">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <p class="contact-label">Location</p>
+                            <span class="contact-value">Lucknow, Uttar Pradesh, India</span>
+                        </div>
+                    </div>
+                    <div class="contact-socials">
+                        <a href="https://www.linkedin.com/feed/" target="_blank" class="social-btn linkedin"
+                            id="contactLinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
+                            LinkedIn
+                        </a>
+                        <a href="https://www.instagram.com/kaushikk_tripathi/" target="_blank"
+                            class="social-btn instagram" id="contactInstagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                            </svg>
+                            Instagram
+                        </a>
+                        <a href="https://github.com/Kaushikkkkkk250106" target="_blank" class="social-btn github"
+                            id="contactGithub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>Designed &amp; Built by <span class="text-gradient">Kaushik Tripathi</span> &nbsp;|&nbsp; BCA – BBDU,
+                Lucknow &nbsp;|&nbsp; 2026</p>
+            <p class="footer-sub">Made with ❤️ and lots of ☕ • Data Science &amp; AI Enthusiast</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script>
+        // ======================================================
+        // THEME TOGGLE
+        // ======================================================
+        const html = document.documentElement;
+        const themeToggle = document.getElementById('themeToggle');
+        const STORAGE_KEY = 'kt-theme';
+
+        function applyTheme(theme) {
+            html.setAttribute('data-theme', theme);
+            localStorage.setItem(STORAGE_KEY, theme);
+        }
+
+        // Init from storage
+        const savedTheme = localStorage.getItem(STORAGE_KEY) || 'dark';
+        applyTheme(savedTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const current = html.getAttribute('data-theme');
+            applyTheme(current === 'dark' ? 'light' : 'dark');
+        });
+
+        // ======================================================
+        // PARTICLE CANVAS
+        // ======================================================
+        (function initParticles() {
+            const canvas = document.getElementById('particles-canvas');
+            const ctx = canvas.getContext('2d');
+            let W, H, particles = [];
+
+            function resize() {
+                W = canvas.width = window.innerWidth;
+                H = canvas.height = window.innerHeight;
+            }
+            window.addEventListener('resize', resize);
+            resize();
+
+            const COUNT = 80;
+            function mkParticle() {
+                return {
+                    x: Math.random() * W,
+                    y: Math.random() * H,
+                    r: Math.random() * 1.6 + 0.4,
+                    dx: (Math.random() - 0.5) * 0.4,
+                    dy: (Math.random() - 0.5) * 0.4,
+                    a: Math.random() * 0.6 + 0.2,
+                };
+            }
+            for (let i = 0; i < COUNT; i++) particles.push(mkParticle());
+
+            function draw() {
+                ctx.clearRect(0, 0, W, H);
+                const isDark = html.getAttribute('data-theme') !== 'light';
+                const baseColor = isDark ? '108,99,255' : '91,82,232';
+                const lineColor = isDark ? 'rgba(108,99,255,' : 'rgba(91,82,232,';
+
+                particles.forEach((p, i) => {
+                    p.x += p.dx; p.y += p.dy;
+                    if (p.x < 0) p.x = W; if (p.x > W) p.x = 0;
+                    if (p.y < 0) p.y = H; if (p.y > H) p.y = 0;
+
                     ctx.beginPath();
-                    ctx.moveTo(p.x, p.y);
-                    ctx.lineTo(q.x, q.y);
-                    ctx.strokeStyle = lineColor + (0.12 * (1 - dist / 120)) + ')';
-                    ctx.lineWidth = 0.6;
-                    ctx.stroke();
+                    ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+                    ctx.fillStyle = `rgba(${baseColor},${p.a})`;
+                    ctx.fill();
+
+                    // Connect nearby particles
+                    for (let j = i + 1; j < particles.length; j++) {
+                        const q = particles[j];
+                        const dist = Math.hypot(p.x - q.x, p.y - q.y);
+                        if (dist < 120) {
+                            ctx.beginPath();
+                            ctx.moveTo(p.x, p.y);
+                            ctx.lineTo(q.x, q.y);
+                            ctx.strokeStyle = lineColor + (0.12 * (1 - dist / 120)) + ')';
+                            ctx.lineWidth = 0.6;
+                            ctx.stroke();
+                        }
+                    }
+                });
+                requestAnimationFrame(draw);
+            }
+            draw();
+        })();
+
+        // ======================================================
+        // CURSOR GLOW
+        // ======================================================
+        const cursorGlow = document.getElementById('cursorGlow');
+        document.addEventListener('mousemove', e => {
+            cursorGlow.style.left = e.clientX + 'px';
+            cursorGlow.style.top = e.clientY + 'px';
+        });
+
+        // ======================================================
+        // AVATAR 3D TILT
+        // ======================================================
+        const avatarTilt = document.getElementById('avatarTilt');
+        if (avatarTilt) {
+            document.addEventListener('mousemove', e => {
+                const cx = window.innerWidth / 2, cy = window.innerHeight / 2;
+                const rx = ((e.clientY - cy) / cy) * -10;
+                const ry = ((e.clientX - cx) / cx) * 10;
+                avatarTilt.style.transform = `rotateX(${rx}deg) rotateY(${ry}deg)`;
+            });
+            document.addEventListener('mouseleave', () => {
+                avatarTilt.style.transform = 'rotateX(0deg) rotateY(0deg)';
+            });
+        }
+
+        // ======================================================
+        // TYPED TEXT EFFECT
+        // ======================================================
+        const phrases = [
+            'Data Science & AI Enthusiast',
+            'Python Developer',
+            'Machine Learning Explorer',
+            'Power BI Dashboard Builder',
+            'Future Data Scientist',
+        ];
+        let pIdx = 0, cIdx = 0, deleting = false;
+        const typedEl = document.getElementById('typedText');
+
+        function typeLoop() {
+            if (!typedEl) return;
+            const current = phrases[pIdx];
+            if (!deleting) {
+                typedEl.textContent = current.slice(0, ++cIdx);
+                if (cIdx === current.length) { deleting = true; setTimeout(typeLoop, 1800); return; }
+            } else {
+                typedEl.textContent = current.slice(0, --cIdx);
+                if (cIdx === 0) { deleting = false; pIdx = (pIdx + 1) % phrases.length; }
+            }
+            setTimeout(typeLoop, deleting ? 42 : 72);
+        }
+        typeLoop();
+
+        // ======================================================
+        // ANIMATED COUNTERS
+        // ======================================================
+        function animateCounter(el, target, suffix) {
+            let start = 0;
+            const dur = 1400;
+            const step = (timestamp) => {
+                if (!start) start = timestamp;
+                const progress = Math.min((timestamp - start) / dur, 1);
+                const eased = 1 - Math.pow(1 - progress, 3);
+                el.textContent = Math.floor(eased * target) + (suffix || '');
+                if (progress < 1) requestAnimationFrame(step);
+                else el.textContent = target + (suffix || '');
+            };
+            requestAnimationFrame(step);
+        }
+
+        const counterObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const el = entry.target;
+                    const target = parseInt(el.getAttribute('data-count'));
+                    if (!isNaN(target)) {
+                        animateCounter(el, target, el.getAttribute('data-suffix') || '+');
+                        counterObserver.unobserve(el);
+                    }
                 }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('[data-count]').forEach(el => counterObserver.observe(el));
+
+        // ======================================================
+        // NAVBAR SCROLL EFFECT
+        // ======================================================
+        const navbar = document.getElementById('navbar');
+        const backToTop = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 80) {
+                navbar.classList.add('scrolled');
+                backToTop.classList.add('visible');
+            } else {
+                navbar.classList.remove('scrolled');
+                backToTop.classList.remove('visible');
+            }
+            highlightNav();
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // ======================================================
+        // HAMBURGER MENU
+        // ======================================================
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+            hamburger.classList.toggle('active');
+        });
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('open');
+                hamburger.classList.remove('active');
+            });
+        });
+
+        // ======================================================
+        // ACTIVE NAV HIGHLIGHT
+        // ======================================================
+        function highlightNav() {
+            const sections = ['hero', 'about', 'skills', 'projects', 'experience', 'education', 'contact'];
+            const scrollY = window.scrollY + 120;
+            sections.forEach(id => {
+                const el = document.getElementById(id);
+                const navEl = document.getElementById('nav-' + id);
+                if (!el || !navEl) return;
+                if (el.offsetTop <= scrollY && el.offsetTop + el.offsetHeight > scrollY) {
+                    document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+                    navEl.classList.add('active');
+                }
+            });
+        }
+
+        // ======================================================
+        // SCROLL REVEAL (staggered by position in parent)
+        // ======================================================
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                }
+            });
+        }, { threshold: 0.08 });
+
+        document.querySelectorAll('.glass-card, .timeline-item, .edu-card, .stat-item').forEach((el, i) => {
+            el.classList.add('reveal');
+            // Stagger sibling cards
+            const siblings = el.parentElement ? [...el.parentElement.children].filter(c => c.classList.contains(el.classList[0])) : [];
+            const idx = siblings.indexOf(el);
+            if (idx > 0 && idx <= 5) {
+                el.style.transitionDelay = (idx * 0.1) + 's';
+            }
+            revealObserver.observe(el);
+        });
+
+        // ======================================================
+        // SMOOTH SCROLL
+        // ======================================================
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // ======================================================
+        // HERO SCROLL INDICATOR FADE
+        // ======================================================
+        window.addEventListener('scroll', () => {
+            const indicator = document.getElementById('scrollIndicator');
+            if (indicator) {
+                indicator.style.opacity = Math.max(0, 1 - window.scrollY / 300);
             }
         });
-        requestAnimationFrame(draw);
-    }
-    draw();
-})();
 
-// ======================================================
-// CURSOR GLOW
-// ======================================================
-const cursorGlow = document.getElementById('cursorGlow');
-document.addEventListener('mousemove', e => {
-    cursorGlow.style.left = e.clientX + 'px';
-    cursorGlow.style.top  = e.clientY + 'px';
-});
+        // ======================================================
+        // BUTTON RIPPLE EFFECT
+        // ======================================================
+        document.querySelectorAll('.btn, .btn-cert-view, .btn-outline-sm').forEach(btn => {
+            btn.addEventListener('click', function (e) {
+                const rect = this.getBoundingClientRect();
+                const ripple = document.createElement('span');
+                ripple.className = 'ripple';
+                const size = Math.max(rect.width, rect.height);
+                ripple.style.cssText = `width:${size}px;height:${size}px;left:${e.clientX - rect.left - size / 2}px;top:${e.clientY - rect.top - size / 2}px`;
+                this.style.position = 'relative';
+                this.style.overflow = 'hidden';
+                this.appendChild(ripple);
+                ripple.addEventListener('animationend', () => ripple.remove());
+            });
+        });
 
-// ======================================================
-// AVATAR 3D TILT
-// ======================================================
-const avatarTilt = document.getElementById('avatarTilt');
-if (avatarTilt) {
-    document.addEventListener('mousemove', e => {
-        const cx = window.innerWidth / 2, cy = window.innerHeight / 2;
-        const rx = ((e.clientY - cy) / cy) * -10;
-        const ry = ((e.clientX - cx) / cx) * 10;
-        avatarTilt.style.transform = `rotateX(${rx}deg) rotateY(${ry}deg)`;
-    });
-    document.addEventListener('mouseleave', () => {
-        avatarTilt.style.transform = 'rotateX(0deg) rotateY(0deg)';
-    });
-}
-
-// ======================================================
-// TYPED TEXT EFFECT
-// ======================================================
-const phrases = [
-    'Data Science & AI Enthusiast',
-    'Python Developer',
-    'Machine Learning Explorer',
-    'Power BI Dashboard Builder',
-    'Future Data Scientist',
-];
-let pIdx = 0, cIdx = 0, deleting = false;
-const typedEl = document.getElementById('typedText');
-
-function typeLoop() {
-    if (!typedEl) return;
-    const current = phrases[pIdx];
-    if (!deleting) {
-        typedEl.textContent = current.slice(0, ++cIdx);
-        if (cIdx === current.length) { deleting = true; setTimeout(typeLoop, 1800); return; }
-    } else {
-        typedEl.textContent = current.slice(0, --cIdx);
-        if (cIdx === 0) { deleting = false; pIdx = (pIdx + 1) % phrases.length; }
-    }
-    setTimeout(typeLoop, deleting ? 42 : 72);
-}
-typeLoop();
-
-// ======================================================
-// ANIMATED COUNTERS
-// ======================================================
-function animateCounter(el, target, suffix) {
-    let start = 0;
-    const dur = 1400;
-    const step = (timestamp) => {
-        if (!start) start = timestamp;
-        const progress = Math.min((timestamp - start) / dur, 1);
-        const eased = 1 - Math.pow(1 - progress, 3);
-        el.textContent = Math.floor(eased * target) + (suffix || '');
-        if (progress < 1) requestAnimationFrame(step);
-        else el.textContent = target + (suffix || '');
-    };
-    requestAnimationFrame(step);
-}
-
-const counterObserver = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            const el = entry.target;
-            const target = parseInt(el.getAttribute('data-count'));
-            if (!isNaN(target)) {
-                animateCounter(el, target, el.getAttribute('data-suffix') || '+');
-                counterObserver.unobserve(el);
-            }
-        }
-    });
-}, { threshold: 0.5 });
-
-document.querySelectorAll('[data-count]').forEach(el => counterObserver.observe(el));
-
-// ======================================================
-// NAVBAR SCROLL EFFECT
-// ======================================================
-const navbar   = document.getElementById('navbar');
-const backToTop = document.getElementById('backToTop');
-
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 80) {
-        navbar.classList.add('scrolled');
-        backToTop.classList.add('visible');
-    } else {
-        navbar.classList.remove('scrolled');
-        backToTop.classList.remove('visible');
-    }
-    highlightNav();
-});
-
-backToTop.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-});
-
-// ======================================================
-// HAMBURGER MENU
-// ======================================================
-const hamburger = document.getElementById('hamburger');
-const navLinks  = document.getElementById('navLinks');
-hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('open');
-    hamburger.classList.toggle('active');
-});
-document.querySelectorAll('.nav-link').forEach(link => {
-    link.addEventListener('click', () => {
-        navLinks.classList.remove('open');
-        hamburger.classList.remove('active');
-    });
-});
-
-// ======================================================
-// ACTIVE NAV HIGHLIGHT
-// ======================================================
-function highlightNav() {
-    const sections = ['hero','about','skills','projects','experience','education','contact'];
-    const scrollY = window.scrollY + 120;
-    sections.forEach(id => {
-        const el = document.getElementById(id);
-        const navEl = document.getElementById('nav-' + id);
-        if (!el || !navEl) return;
-        if (el.offsetTop <= scrollY && el.offsetTop + el.offsetHeight > scrollY) {
-            document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
-            navEl.classList.add('active');
-        }
-    });
-}
-
-// ======================================================
-// SCROLL REVEAL (staggered by position in parent)
-// ======================================================
-const revealObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('revealed');
-        }
-    });
-}, { threshold: 0.08 });
-
-document.querySelectorAll('.glass-card, .timeline-item, .edu-card, .stat-item').forEach((el, i) => {
-    el.classList.add('reveal');
-    // Stagger sibling cards
-    const siblings = el.parentElement ? [...el.parentElement.children].filter(c => c.classList.contains(el.classList[0])) : [];
-    const idx = siblings.indexOf(el);
-    if (idx > 0 && idx <= 5) {
-        el.style.transitionDelay = (idx * 0.1) + 's';
-    }
-    revealObserver.observe(el);
-});
-
-// ======================================================
-// SMOOTH SCROLL
-// ======================================================
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-    });
-});
-
-// ======================================================
-// HERO SCROLL INDICATOR FADE
-// ======================================================
-window.addEventListener('scroll', () => {
-    const indicator = document.getElementById('scrollIndicator');
-    if (indicator) {
-        indicator.style.opacity = Math.max(0, 1 - window.scrollY / 300);
-    }
-});
-
-// ======================================================
-// BUTTON RIPPLE EFFECT
-// ======================================================
-document.querySelectorAll('.btn, .btn-cert-view, .btn-outline-sm').forEach(btn => {
-    btn.addEventListener('click', function(e) {
-        const rect = this.getBoundingClientRect();
-        const ripple = document.createElement('span');
-        ripple.className = 'ripple';
-        const size = Math.max(rect.width, rect.height);
-        ripple.style.cssText = `width:${size}px;height:${size}px;left:${e.clientX-rect.left-size/2}px;top:${e.clientY-rect.top-size/2}px`;
-        this.style.position = 'relative';
-        this.style.overflow = 'hidden';
-        this.appendChild(ripple);
-        ripple.addEventListener('animationend', () => ripple.remove());
-    });
-});
-
-// ======================================================
-// PROJECT CARD 3D TILT ON HOVER
-// ======================================================
-document.querySelectorAll('.project-card, .cert-card, .edu-card').forEach(card => {
-    card.addEventListener('mousemove', e => {
-        const rect = card.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
-        const cx = rect.width / 2, cy = rect.height / 2;
-        const rx = ((y - cy) / cy) * -6;
-        const ry = ((x - cx) / cx) * 6;
-        card.style.transform = `translateY(-6px) scale(1.01) rotateX(${rx}deg) rotateY(${ry}deg)`;
-    });
-    card.addEventListener('mouseleave', () => {
-        card.style.transform = '';
-    });
-});
-</script>
+        // ======================================================
+        // PROJECT CARD 3D TILT ON HOVER
+        // ======================================================
+        document.querySelectorAll('.project-card, .cert-card, .edu-card').forEach(card => {
+            card.addEventListener('mousemove', e => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                const cx = rect.width / 2, cy = rect.height / 2;
+                const rx = ((y - cy) / cy) * -6;
+                const ry = ((x - cx) / cx) * 6;
+                card.style.transform = `translateY(-6px) scale(1.01) rotateX(${rx}deg) rotateY(${ry}deg)`;
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = '';
+            });
+        });
+    </script>
 </body>
+
 </html>
